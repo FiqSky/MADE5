@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">WatchMovie</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_movie_fragment">Hello Movie fragment</string>
+    <string name="title_movie">Movie</string>
+    <string name="movies_name">Movie Name</string>
+    <string name="movies_synopsis">Movie Synopsis</string>
+    <string name="title_series">Series</string>
+    <string name="series_name">Movie Name</string>
+    <string name="change_language_settings">Change Language</string>
+    <string name="description">Description</string>
+    <string name="look">Look</string>
+    <string name="sinopsis">Sunopsis</string>
+    <string name="movie_release">Release</string>
+    <string name="image_poster">Image Description</string>
+    <string name="movie_director">Direcotr</string>
+    <string name="movie_genre">Genre</string>
+    <string name="informasi">Information</string>
+    <string name="favorite">Favorite</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="added">Added Successfully</string>
+    <string name="failed_add">Failed to Add</string>
+    <string name="removed">Removed Successfully</string>
+    <string name="failed_remove">Failed to remove</string>
+</resources>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">WatchMovie</string>
+    <string name="title_home">Halaman Utama</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifikasi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_movie_fragment">Hai Fragment Film</string>
+    <string name="title_movie">Film</string>
+    <string name="movies_name">Nama Film</string>
+    <string name="movies_synopsis">Sinopsis Film</string>
+    <string name="title_series">Acara TV</string>
+    <string name="series_name">Nama Acara TV</string>
+    <string name="change_language_settings">Ubah Bahasa</string>
+    <string name="description">Deskripsi</string>
+    <string name="look">Lihat</string>
+    <string name="sinopsis">Sinopsis</string>
+    <string name="movie_release">Rilis</string>
+    <string name="image_poster">Deskripsi Gambar</string>
+    <string name="movie_director">Sutradara</string>
+    <string name="movie_genre">Genre</string>
+    <string name="informasi">Informasi</string>
+    <string name="favorite">Favorit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="added">Berhasil menambahkan</string>
+    <string name="failed_add">Gagal menambahkan</string>
+    <string name="removed">Berhasil menghapus</string>
+    <string name="failed_remove">Gagal menghapus</string>
+</resources>
