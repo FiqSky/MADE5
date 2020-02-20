@@ -9,13 +9,13 @@
         android:id="@+id/navigation_movie"
         android:name="com.farzain.watchmovie.fragment.MovieFragment"
         android:label="@string/title_movie"
-        tools:layout="@layout/fragment_movie"/>
+        tools:layout="@layout/fragment_movie" />
 
     <fragment
         android:id="@+id/navigation_series"
         android:name="com.farzain.watchmovie.fragment.SeriesFragment"
         android:label="@string/title_series"
-        tools:layout="@layout/fragment_series"/>
+        tools:layout="@layout/fragment_series" />
     <fragment
         android:id="@+id/navigation_favorite"
         android:name="com.farzain.watchmovie.fragment.FavoriteFragment"

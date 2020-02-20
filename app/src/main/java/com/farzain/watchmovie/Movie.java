@@ -4,8 +4,6 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 
-import org.json.JSONObject;
-
 import static androidx.constraintlayout.widget.Constraints.TAG;
 
 public class Movie implements Parcelable {
@@ -39,7 +37,7 @@ public class Movie implements Parcelable {
     }
 
     public String getName() {
-        Log.d(TAG, "getName Movie: "+ name);
+        Log.d(TAG, "getName Movie: " + name);
         return name;
     }
 

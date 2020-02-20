@@ -12,8 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.farzain.watchmovie.Movie;
-import com.farzain.watchmovie.activity.MovieInfoActivity;
 import com.farzain.watchmovie.R;
+import com.farzain.watchmovie.activity.MovieInfoActivity;
 
 import java.util.ArrayList;
 
@@ -33,9 +33,9 @@ public class ListMovieAdapter extends RecyclerView.Adapter<ListMovieAdapter.List
         return new ListViewHolder(view);
     }
 
-    private OnItemClickCallback onItemClickCallback;
+    private ListMovieAdapter.OnItemClickCallback onItemClickCallback;
 
-    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
+    public void setOnItemClickCallback(ListMovieAdapter.OnItemClickCallback onItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback;
     }
 
@@ -51,7 +51,8 @@ public class ListMovieAdapter extends RecyclerView.Adapter<ListMovieAdapter.List
 
     public class ListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView imgPhoto;
-        TextView tvName, tvDescription;
+        TextView tvName;
+        TextView tvDescription;
 
         ListViewHolder(View itemView) {
             super(itemView);

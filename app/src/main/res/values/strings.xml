@@ -29,5 +29,10 @@
     <string name="failed_remove">Failed to remove</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="setting">Settings</string>
+    <string name="reminder_daily">Daily Reminder</string>
+    <string name="reminder_daily_desc">mengirimkan notifikasi ke pengguna untuk kembali ke Aplikasi Movie Catalogue. Daily reminder harus selalu berjalan tiap jam 7 pagi.</string>
+    <string name="reminder_release">Release reminder</string>
+    <string name="reminder_release_desc">mengirimkan notifikasi ke pengguna semua film yang rilis hari ini selalu berjalan tiap jam 8 pagi.</string>
 </resources>

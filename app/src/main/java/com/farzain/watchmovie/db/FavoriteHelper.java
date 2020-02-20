@@ -10,24 +10,21 @@ import android.util.Log;
 
 import com.farzain.watchmovie.Movie;
 import com.farzain.watchmovie.Series;
-import com.farzain.watchmovie.viewmodel.MovieViewModel;
 
 import java.util.ArrayList;
 
-//import static android.provider.BaseColumns._ID;
+import static android.provider.BaseColumns._ID;
 import static androidx.constraintlayout.widget.Constraints.TAG;
-import static com.farzain.watchmovie.db.DatabaseContract.TABLE_MOVIE;
-import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns._ID;
-import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.TITLE;
 import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.OVERVIEW;
-import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.RELESE_DATE;
 import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.POSTER_PATH;
-import static com.farzain.watchmovie.db.DatabaseContract.TABLE_SERIES;
-import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns._ID;
-import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.TITLE_SERIES;
+import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.RELESE_DATE;
+import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.TITLE;
 import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.OVERVIEW_SERIES;
-import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.RELESE_DATE_SERIES;
 import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.POSTER_PATH_SERIES;
+import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.RELESE_DATE_SERIES;
+import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.TITLE_SERIES;
+import static com.farzain.watchmovie.db.DatabaseContract.TABLE_MOVIE;
+import static com.farzain.watchmovie.db.DatabaseContract.TABLE_SERIES;
 
 public class FavoriteHelper {
     private static final String DATABASE_MOVIE = TABLE_MOVIE;
@@ -98,7 +95,6 @@ public class FavoriteHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put(_ID, movie.getId());
         contentValues.put(TITLE, movie.getName());
-        Log.d(TAG, "insertMovie: " + movie.getName());
         contentValues.put(OVERVIEW, movie.getSynopsis());
         contentValues.put(RELESE_DATE, movie.getRelease());
         contentValues.put(POSTER_PATH, movie.getPhoto());

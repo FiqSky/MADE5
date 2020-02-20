@@ -27,4 +27,12 @@
     <string name="failed_add">Failed to Add</string>
     <string name="removed">Removed Successfully</string>
     <string name="failed_remove">Failed to remove</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="search">Search</string>
+    <string name="setting">Settings</string>
+    <string name="reminder_daily">Daily Reminder</string>
+    <string name="reminder_daily_desc">Send notifications to users to return to the Movie Catalog Application. Daily reminder must always run every 7 o`clock in the morning.</string>
+    <string name="reminder_release">Release reminder</string>
+    <string name="reminder_release_desc">Sending notifications to users of all films released today always runs every 8am.</string>
 </resources>

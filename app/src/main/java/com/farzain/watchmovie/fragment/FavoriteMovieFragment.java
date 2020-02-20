@@ -2,6 +2,12 @@ package com.farzain.watchmovie.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -9,17 +15,16 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import com.farzain.watchmovie.Movie;
 import com.farzain.watchmovie.R;
 import com.farzain.watchmovie.activity.MovieInfoActivity;
+import com.farzain.watchmovie.activity.ReminderActivity;
 import com.farzain.watchmovie.adapter.ListMovieAdapter;
 import com.farzain.watchmovie.db.FavoriteHelper;
 
 import java.util.ArrayList;
+
+import static com.farzain.watchmovie.db.DatabaseContract.CONTENT_URI_MOVIE;
 
 public class FavoriteMovieFragment extends Fragment {
 
@@ -44,10 +49,28 @@ public class FavoriteMovieFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         recyclerView = view.findViewById(R.id.rv_favorite_movie);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(layoutManager);
 
         helper = FavoriteHelper.getInstance(getContext());
         listMovie = new ArrayList<>();
         adapter = new ListMovieAdapter();
+    }
+
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        inflater.inflate(R.menu.main_menu, menu);
+        menu.findItem(R.id.search_btn).setVisible(false);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.action_change_settings) {
+            Intent intent = new Intent(getActivity(), ReminderActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -58,8 +81,6 @@ public class FavoriteMovieFragment extends Fragment {
         listMovie.addAll(helper.getAllFavoriteMovie());
         adapter.setData(listMovie);
         adapter.notifyDataSetChanged();
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
-        recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
         adapter.setOnItemClickCallback(new ListMovieAdapter.OnItemClickCallback() {
             @Override

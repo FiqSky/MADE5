@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.farzain.watchmovie"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.example.cataloguemoviefinal.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.example.cataloguemoviefinal.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+    <permission android:name="com.example.cataloguemoviefinal.UPDATE_WIDGET_DATA" />
+
+    <uses-permission android:name="com.example.cataloguemoviefinal.UPDATE_WIDGET_DATA" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.farzain.watchmovie.activity.ReminderActivity" />
+        <activity android:name="com.farzain.watchmovie.activity.SeriesInfoActivity" />
+        <activity android:name="com.farzain.watchmovie.activity.MovieInfoActivity" />
+        <activity
+            android:name="com.farzain.watchmovie.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.farzain.watchmovie.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

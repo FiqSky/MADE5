@@ -1,8 +1,5 @@
 package com.farzain.watchmovie.activity;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,11 +9,14 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.farzain.watchmovie.R;
 import com.farzain.watchmovie.Series;
 import com.farzain.watchmovie.db.FavoriteHelper;
-import com.bumptech.glide.request.RequestOptions;
 
 public class SeriesInfoActivity extends AppCompatActivity {
 

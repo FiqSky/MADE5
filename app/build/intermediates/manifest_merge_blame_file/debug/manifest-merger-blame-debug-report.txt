@@ -1,0 +1,105 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.farzain.watchmovie"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:7:5-68
+13-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:7:22-65
+14    <uses-permission android:name="android.permission.VIBRATE" />
+14-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:8:5-66
+14-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:8:22-63
+15
+16    <permission
+16-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:10:5-12:44
+17        android:name="com.example.cataloguemoviefinal.READ_DATABASE"
+17-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:11:9-69
+18        android:protectionLevel="normal" />
+18-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:12:9-41
+19    <permission
+19-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:13:5-15:44
+20        android:name="com.example.cataloguemoviefinal.WRITE_DATABASE"
+20-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:14:9-70
+21        android:protectionLevel="normal" />
+21-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:15:9-41
+22    <permission android:name="com.example.cataloguemoviefinal.UPDATE_WIDGET_DATA" />
+22-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:17:5-85
+22-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:17:17-82
+23
+24    <uses-permission android:name="com.example.cataloguemoviefinal.UPDATE_WIDGET_DATA" />
+24-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:19:5-90
+24-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:19:22-87
+25
+26    <application
+26-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:21:5-41:19
+27        android:allowBackup="true"
+27-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:22:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.1.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_launcher"
+30-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:23:9-43
+31        android:label="@string/app_name"
+31-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:24:9-41
+32        android:roundIcon="@mipmap/ic_launcher_round"
+32-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:25:9-54
+33        android:supportsRtl="true"
+33-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:26:9-35
+34        android:testOnly="true"
+35        android:theme="@style/AppTheme"
+35-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:27:9-40
+36        android:usesCleartextTraffic="true" >
+36-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:28:9-44
+37        <activity android:name="com.farzain.watchmovie.activity.ReminderActivity" />
+37-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:29:9-72
+37-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:29:19-60
+38        <activity android:name="com.farzain.watchmovie.activity.SeriesInfoActivity" />
+38-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:30:9-65
+38-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:30:19-62
+39        <activity android:name="com.farzain.watchmovie.activity.MovieInfoActivity" />
+39-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:31:9-64
+39-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:31:19-61
+40        <activity
+40-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:32:9-40:20
+41            android:name="com.farzain.watchmovie.MainActivity"
+41-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:33:13-41
+42            android:label="@string/app_name" >
+42-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:34:13-45
+43            <intent-filter>
+43-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:35:13-39:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:36:17-69
+44-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:36:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:38:17-77
+46-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:38:27-74
+47            </intent-filter>
+48        </activity>
+49
+50        <provider
+50-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+51            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+51-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+52            android:authorities="com.farzain.watchmovie.lifecycle-process"
+52-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+53            android:exported="false"
+53-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+54            android:multiprocess="true" />
+54-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+55    </application>
+56
+57</manifest>

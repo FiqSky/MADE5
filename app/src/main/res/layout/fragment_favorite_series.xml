@@ -10,7 +10,8 @@
         android:id="@+id/rv_favorite_series"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/item_row_series"/>
+        tools:listitem="@layout/item_row_series" />
+
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="match_parent"

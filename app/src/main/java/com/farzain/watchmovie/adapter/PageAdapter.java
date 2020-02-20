@@ -12,8 +12,6 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import com.farzain.watchmovie.R;
 import com.farzain.watchmovie.fragment.FavoriteMovieFragment;
 import com.farzain.watchmovie.fragment.FavoriteSeriesFragment;
-import com.farzain.watchmovie.fragment.MovieFragment;
-import com.farzain.watchmovie.fragment.SeriesFragment;
 
 public class PageAdapter extends FragmentPagerAdapter {
     private final Context mContext;

@@ -3,8 +3,6 @@ package com.farzain.watchmovie;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import org.json.JSONObject;
-
 public class Series implements Parcelable {
     private int id;
     private String name;

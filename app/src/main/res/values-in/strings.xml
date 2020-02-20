@@ -27,4 +27,12 @@
     <string name="failed_add">Gagal menambahkan</string>
     <string name="removed">Berhasil menghapus</string>
     <string name="failed_remove">Gagal menghapus</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="search">Cari</string>
+    <string name="setting">Pengaturan</string>
+    <string name="reminder_daily">Pengingat Harian</string>
+    <string name="reminder_daily_desc">Mengirimkan notifikasi ke pengguna untuk kembali ke Aplikasi Movie Catalogue. Daily reminder harus selalu berjalan tiap jam 7 pagi.</string>
+    <string name="reminder_release">Pengingat Rilis</string>
+    <string name="reminder_release_desc">Mengirimkan notifikasi ke pengguna semua film yang rilis hari ini selalu berjalan tiap jam 8 pagi.</string>
 </resources>

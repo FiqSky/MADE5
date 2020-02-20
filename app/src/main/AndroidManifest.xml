@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.farzain.watchmovie">
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.example.cataloguemoviefinal.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.example.cataloguemoviefinal.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <permission android:name="com.example.cataloguemoviefinal.UPDATE_WIDGET_DATA" />
+
+    <uses-permission android:name="com.example.cataloguemoviefinal.UPDATE_WIDGET_DATA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +26,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.SeriesInfoActivity"></activity>
+        <activity android:name=".activity.ReminderActivity"></activity>
+        <activity android:name=".activity.SeriesInfoActivity" />
         <activity android:name=".activity.MovieInfoActivity" />
         <activity
             android:name=".MainActivity"

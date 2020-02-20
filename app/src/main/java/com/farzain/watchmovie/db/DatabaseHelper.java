@@ -16,7 +16,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     " %s TEXT NOT NULL," +
                     " %s TEXT NOT NULL)",
             DatabaseContract.TABLE_MOVIE,
-            DatabaseContract.MovieColumns.ID_MOVIE,
+            DatabaseContract.MovieColumns._ID,
             DatabaseContract.MovieColumns.TITLE,
             DatabaseContract.MovieColumns.OVERVIEW,
             DatabaseContract.MovieColumns.RELESE_DATE,
@@ -30,7 +30,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     " %s TEXT NOT NULL," +
                     " %s TEXT NOT NULL)",
             DatabaseContract.TABLE_SERIES,
-            DatabaseContract.SeriesColumns.ID_SERIES,
+            DatabaseContract.SeriesColumns._ID,
             DatabaseContract.SeriesColumns.TITLE_SERIES,
             DatabaseContract.SeriesColumns.OVERVIEW_SERIES,
             DatabaseContract.SeriesColumns.RELESE_DATE_SERIES,
