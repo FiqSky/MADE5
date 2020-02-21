@@ -15,14 +15,13 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <permission
-        android:name="com.example.cataloguemoviefinal.READ_DATABASE"
+        android:name="com.farzain.watchmovie.READ_DATABASE"
         android:protectionLevel="normal" />
     <permission
-        android:name="com.example.cataloguemoviefinal.WRITE_DATABASE"
+        android:name="com.farzain.watchmovie.WRITE_DATABASE"
         android:protectionLevel="normal" />
-    <permission android:name="com.example.cataloguemoviefinal.UPDATE_WIDGET_DATA" />
 
-    <uses-permission android:name="com.example.cataloguemoviefinal.UPDATE_WIDGET_DATA" />
+    <uses-permission android:name="com.farzain.watchmovie.UPDATE_WIDGET_DATA" />
 
     <application
         android:allowBackup="true"
@@ -34,6 +33,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <provider
+            android:name="com.farzain.watchmovie.provider.FavProvider"
+            android:authorities="com.farzain.watchmovie"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.farzain.watchmovie.widget.FavoriteStackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver android:name="com.farzain.watchmovie.widget.FavoriteImageBannerWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/favorite_image_banner_widget_info" />
+        </receiver>
+
         <activity android:name="com.farzain.watchmovie.activity.ReminderActivity" />
         <activity android:name="com.farzain.watchmovie.activity.SeriesInfoActivity" />
         <activity android:name="com.farzain.watchmovie.activity.MovieInfoActivity" />

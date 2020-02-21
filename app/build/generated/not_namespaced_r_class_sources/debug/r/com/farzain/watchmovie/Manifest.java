@@ -9,9 +9,8 @@ package com.farzain.watchmovie;
 
 public final class Manifest {
   public static final class permission {
-    public static final String READ_DATABASE="com.example.cataloguemoviefinal.READ_DATABASE";
-    public static final String WRITE_DATABASE="com.example.cataloguemoviefinal.WRITE_DATABASE";
-    public static final String UPDATE_WIDGET_DATA="com.example.cataloguemoviefinal.UPDATE_WIDGET_DATA";
+    public static final String READ_DATABASE="com.farzain.watchmovie.READ_DATABASE";
+    public static final String WRITE_DATABASE="com.farzain.watchmovie.WRITE_DATABASE";
   }
 
 }

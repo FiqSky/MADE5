@@ -90,6 +90,14 @@ public class FavoriteHelper {
         return favoriteMovieArrayList;
     }
 
+    public Cursor queryMovie() {
+        return database.query(DATABASE_MOVIE, null, null, null, null, null, _ID + " ASC", null);
+    }
+
+    public Cursor queryMovieById(String id) {
+        return database.query(DATABASE_MOVIE, null, _ID + " = ?", new String[]{id}, null, null, null, null);
+    }
+
     public long insertMovie(Movie movie) {
         Log.d(TAG, "insertMovie: " + movie.getName() + movie.getSynopsis() + movie.getRelease() + movie.getPhoto());
         ContentValues contentValues = new ContentValues();
@@ -101,9 +109,16 @@ public class FavoriteHelper {
         Log.d(TAG, "insertMovie: " + contentValues);
         return database.insert(DATABASE_MOVIE, null, contentValues);
     }
+    public long insertMovieProvider(ContentValues values) {
+        return database.insert(DATABASE_MOVIE, null, values);
+    }
 
     public int deleteMovie(int id) {
         return database.delete(DATABASE_MOVIE, _ID + " = '" + id + "'", null);
+    }
+
+    public int deleteMovieProvider(String id) {
+        return database.delete(DATABASE_MOVIE, _ID + " = ?", new String[]{id});
     }
 
     public boolean checkMovie(int id) {
@@ -159,9 +174,25 @@ public class FavoriteHelper {
         return database.insert(DATABASE_SERIES, null, contentValues);
     }
 
+    public long insertSeriesProvider(ContentValues values) {
+        return database.insert(DATABASE_SERIES, null, values);
+    }
+
+    public Cursor querySeries() {
+        return database.query(DATABASE_SERIES, null, null, null, null, null, _ID + " ASC", null);
+    }
+
+    public Cursor querySeriesById(String id) {
+        return database.query(DATABASE_SERIES, null, _ID + " = ?", new String[]{id}, null, null, null, null);
+    }
+
     public int deleteSeries(int id) {
         database.isOpen();
         return database.delete(DATABASE_SERIES, _ID + " = '" + id + "'", null);
+    }
+
+    public int deleteSeriesProvider(String id) {
+        return database.delete(DATABASE_SERIES, _ID + " = ?", new String[]{id});
     }
 
     public boolean checkSeries(int id) {

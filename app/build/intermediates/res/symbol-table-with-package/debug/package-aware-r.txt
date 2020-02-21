@@ -1281,6 +1281,7 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
+dimen widget_margin
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -1383,6 +1384,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable example_appwidget_preview
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_dashboard_black_24dp
@@ -1501,6 +1503,7 @@ id all
 id always
 id async
 id auto
+id banner_text
 id barrier
 id beginning
 id blocking
@@ -1549,6 +1552,7 @@ id direct
 id disableHome
 id dropdown_menu
 id edit_query
+id empty_view
 id end
 id end_padder
 id enterAlways
@@ -1582,6 +1586,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView
 id img_item_photo
 id info
 id invisible
@@ -1710,6 +1715,7 @@ id spread_inside
 id src_atop
 id src_in
 id src_over
+id stack_view
 id standard
 id start
 id status_bar_latest_event_content
@@ -1853,6 +1859,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout favorite_image_banner_widget
 layout fragment_favorite
 layout fragment_favorite_movie
 layout fragment_favorite_series
@@ -1919,6 +1926,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout widget_item
 menu bottom_nav_menu
 menu favorite_menu
 menu main_menu
@@ -1953,9 +1961,11 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add_widget
 string added
 string app_name
 string appbar_scrolling_view_behavior
+string appwidget_text
 string bottom_sheet_behavior
 string change_language_settings
 string character_counter_content_description
@@ -1964,6 +1974,7 @@ string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
 string description
+string empty_text
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2828,6 +2839,7 @@ styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml favorite_image_banner_widget_info
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

@@ -35,4 +35,7 @@
     <string name="reminder_daily_desc">mengirimkan notifikasi ke pengguna untuk kembali ke Aplikasi Movie Catalogue. Daily reminder harus selalu berjalan tiap jam 7 pagi.</string>
     <string name="reminder_release">Release reminder</string>
     <string name="reminder_release_desc">mengirimkan notifikasi ke pengguna semua film yang rilis hari ini selalu berjalan tiap jam 8 pagi.</string>
+    <string name="appwidget_text">YOUR FAVORITE MOVIE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="empty_text">empty</string>
 </resources>

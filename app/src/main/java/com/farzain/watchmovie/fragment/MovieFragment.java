@@ -4,6 +4,7 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -48,19 +49,19 @@ public class MovieFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_movie, container, false);
         progressBar = view.findViewById(R.id.progressBar);
         rvMovies = view.findViewById(R.id.rv_movies);
-
+        showRecycleview();
         return view;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        rvMovies.setHasFixedSize(true);
+//        rvMovies.setHasFixedSize(true);
 
-        adapter = new ListMovieAdapter();
-        RecyclerView recyclerView = view.findViewById(R.id.rv_movies);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
-        recyclerView.setAdapter(adapter);
+//        adapter = new ListMovieAdapter();
+//        RecyclerView recyclerView = view.findViewById(R.id.rv_movies);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
+//        recyclerView.setAdapter(adapter);
 
 //        MovieViewModel movieViewModel = ViewModelProviders.of(this).get(MovieViewModel.class);
 //        movieViewModel.getMovies().observe(getViewLifecycleOwner(), getMovie);
@@ -95,6 +96,15 @@ public class MovieFragment extends Fragment {
         searchMovie(menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
+
+    /*@Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.action_change_language) {
+            Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }*/
 
     private void showRecycleview() {
         rvMovies.setLayoutManager(new LinearLayoutManager(this.getContext()));
