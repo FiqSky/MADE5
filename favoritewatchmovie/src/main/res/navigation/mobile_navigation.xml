@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_movie">
+
+    <fragment
+        android:id="@+id/navigation_movie"
+        android:name="com.example.favoritewatchmovie.fragment.FavFragment"
+        android:label="@string/title_movie"
+        tools:layout="@layout/fragment_fav" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_series"/>-->
+<!--        android:name="com.farzain.watchmovie.fragment.SeriesFragment"-->
+<!--        android:label="@string/title_series"-->
+<!--        tools:layout="@layout/fragment_series" -->
+</navigation>

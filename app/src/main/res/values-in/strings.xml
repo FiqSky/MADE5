@@ -39,4 +39,5 @@
     <string name="add_widget">Tambah widget</string>
     <string name="empty_text">kosong</string>
     <string name="reminder_daily_message">Hey ada yang baru ni yuk lihat</string>
+    <string name="search_movie_hint">search_movie</string>
 </resources>

@@ -6768,15 +6768,16 @@ public final class R {
     public static final int removed=0x7f100069;
     public static final int search=0x7f10006a;
     public static final int search_menu_title=0x7f10006b;
-    public static final int series_name=0x7f10006c;
-    public static final int setting=0x7f10006d;
-    public static final int sinopsis=0x7f10006e;
-    public static final int status_bar_notification_info_overflow=0x7f10006f;
-    public static final int title_dashboard=0x7f100070;
-    public static final int title_home=0x7f100071;
-    public static final int title_movie=0x7f100072;
-    public static final int title_notifications=0x7f100073;
-    public static final int title_series=0x7f100074;
+    public static final int search_movie_hint=0x7f10006c;
+    public static final int series_name=0x7f10006d;
+    public static final int setting=0x7f10006e;
+    public static final int sinopsis=0x7f10006f;
+    public static final int status_bar_notification_info_overflow=0x7f100070;
+    public static final int title_dashboard=0x7f100071;
+    public static final int title_home=0x7f100072;
+    public static final int title_movie=0x7f100073;
+    public static final int title_notifications=0x7f100074;
+    public static final int title_series=0x7f100075;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f110000;

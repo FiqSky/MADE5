@@ -14,12 +14,20 @@ import static com.farzain.watchmovie.db.DatabaseContract.TABLE_MOVIE;
 import static com.farzain.watchmovie.db.DatabaseContract.TABLE_SERIES;
 
 public class FavoriteProvider extends ContentProvider {
+    /*
+    Integer digunakan sebagai identifier antara select all sama select by id
+     */
     private static final int MOVIE = 1;
     private static final int MOVIE_ID = 2;
     private static final int SERIES = 3;
     private static final int SERIES_ID = 4;
+    private FavoriteHelper helper;
+
     private static final UriMatcher sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 
+    /*
+    Uri matcher untuk mempermudah identifier dengan menggunakan integer
+     */
     static {
         sUriMatcher.addURI(AUTHORITY, TABLE_MOVIE, MOVIE);
         sUriMatcher.addURI(AUTHORITY,
@@ -31,18 +39,20 @@ public class FavoriteProvider extends ContentProvider {
                 SERIES_ID);
     }
 
-    private FavoriteHelper helper;
-
     public FavoriteProvider() {
     }
 
     @Override
     public boolean onCreate() {
-//        helper.open();
         helper = FavoriteHelper.getInstance(getContext());
+        helper.open();
         return true;
     }
 
+    /*
+    Method query digunakan ketika ingin menjalankan query Select
+    Return cursor
+     */
     @Override
     public Cursor query(Uri uri, String[] projection, String selection,
                         String[] selectionArgs, String sortOrder) {
@@ -103,20 +113,20 @@ public class FavoriteProvider extends ContentProvider {
 
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
-        int drop;
+        int delete;
         switch (sUriMatcher.match(uri)) {
             case MOVIE_ID:
-                drop = helper.deleteMovieProvider(uri.getLastPathSegment());
+                delete = helper.deleteMovieProvider(uri.getLastPathSegment());
                 getContext().getContentResolver().notifyChange(CONTENT_URI_MOVIE, null);
                 break;
             case SERIES_ID:
-                drop = helper.deleteSeriesProvider(uri.getLastPathSegment());
+                delete = helper.deleteSeriesProvider(uri.getLastPathSegment());
                 getContext().getContentResolver().notifyChange(CONTENT_URI_SERIES, null);
                 break;
             default:
-                drop = 0;
+                delete = 0;
                 break;
         }
-        return drop;
+        return delete;
     }
 }

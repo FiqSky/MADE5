@@ -2043,6 +2043,7 @@ string reminder_release_desc
 string removed
 string search
 string search_menu_title
+string search_movie_hint
 string series_name
 string setting
 string sinopsis

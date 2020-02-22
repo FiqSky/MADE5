@@ -150,7 +150,7 @@ public class MovieFragment extends Fragment {
         if (searchManager != null) {
             final SearchView searchView = (SearchView) (menu.findItem(R.id.search_btn)).getActionView();
             searchView.setSearchableInfo(searchManager.getSearchableInfo(getActivity().getComponentName()));
-//            searchView.setQueryHint(getResources().getString(R.string.search_movie_hint));
+            searchView.setQueryHint(getResources().getString(R.string.search_movie_hint));
             searchView.setIconifiedByDefault(false);
             searchView.setFocusable(true);
             searchView.setIconified(false);
