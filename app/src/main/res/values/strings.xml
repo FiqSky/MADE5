@@ -38,4 +38,5 @@
     <string name="appwidget_text">YOUR FAVORITE MOVIE</string>
     <string name="add_widget">Add widget</string>
     <string name="empty_text">empty</string>
+    <string name="reminder_daily_message">Hey ada yang baru ni yuk lihat</string>
 </resources>

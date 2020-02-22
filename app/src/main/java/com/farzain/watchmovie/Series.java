@@ -1,7 +1,16 @@
 package com.farzain.watchmovie;
 
+import android.database.Cursor;
 import android.os.Parcel;
 import android.os.Parcelable;
+
+import static android.provider.BaseColumns._ID;
+import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.TITLE_SERIES;
+import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.OVERVIEW_SERIES;
+import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.RELESE_DATE_SERIES;
+import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.POSTER_PATH_SERIES;
+import static com.farzain.watchmovie.db.DatabaseContract.getColumnInt;
+import static com.farzain.watchmovie.db.DatabaseContract.getColumnString;
 
 public class Series implements Parcelable {
     private int id;
@@ -31,6 +40,22 @@ public class Series implements Parcelable {
     };
 
     public Series() {
+    }
+
+    public Series(int id,String name,String synopsis,String release, String photo) {
+        this.id = id;
+        this.name = name;
+        this.synopsis = synopsis;
+        this.release = release;
+        this.photo = photo;
+    }
+
+    public Series(Cursor cursor) {
+        this.id = getColumnInt(cursor,_ID);
+        this.name = getColumnString(cursor,TITLE_SERIES);
+        this.synopsis = getColumnString(cursor,OVERVIEW_SERIES);
+        this.release = getColumnString(cursor, RELESE_DATE_SERIES);
+        this.photo = getColumnString(cursor, POSTER_PATH_SERIES);
     }
 
     public int getId() {

@@ -1,10 +1,16 @@
 package com.farzain.watchmovie;
 
+import android.database.Cursor;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.util.Log;
 
-import static androidx.constraintlayout.widget.Constraints.TAG;
+import static android.provider.BaseColumns._ID;
+import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.TITLE;
+import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.OVERVIEW;
+import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.RELESE_DATE;
+import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.POSTER_PATH;
+import static com.farzain.watchmovie.db.DatabaseContract.getColumnInt;
+import static com.farzain.watchmovie.db.DatabaseContract.getColumnString;
 
 public class Movie implements Parcelable {
     private int id;
@@ -36,8 +42,23 @@ public class Movie implements Parcelable {
     public Movie() {
     }
 
+    public Movie(int id,String name,String synopsis,String release, String photo) {
+        this.id = id;
+        this.name = name;
+        this.synopsis = synopsis;
+        this.release = release;
+        this.photo = photo;
+    }
+
+    public Movie(Cursor cursor) {
+        this.id = getColumnInt(cursor,_ID);
+        this.name = getColumnString(cursor,TITLE);
+        this.synopsis = getColumnString(cursor,OVERVIEW);
+        this.release = getColumnString(cursor, RELESE_DATE);
+        this.photo = getColumnString(cursor, POSTER_PATH);
+    }
+
     public String getName() {
-        Log.d(TAG, "getName Movie: " + name);
         return name;
     }
 

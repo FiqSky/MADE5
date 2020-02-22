@@ -24,11 +24,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <receiver
+            android:name=".reminder.ReleaseReminderReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+        <receiver
+            android:name=".reminder.DailyReminderReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
         <provider
             android:name=".db.FavoriteProvider"
             android:authorities="com.farzain.watchmovie"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true" />
 
         <service
             android:name=".widget.FavoriteStackWidgetService"
