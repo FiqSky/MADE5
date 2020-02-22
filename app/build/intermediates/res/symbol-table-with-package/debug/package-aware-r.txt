@@ -1370,6 +1370,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_alarm_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1722,8 +1723,8 @@ id status_bar_latest_event_content
 id stretch
 id submenuarrow
 id submit_area
-id sw_daily
-id sw_release
+id switch_daily
+id switch_release
 id tab
 id tabMode
 id tag_accessibility_actions
@@ -2036,6 +2037,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string reminder_daily
 string reminder_daily_desc
+string reminder_daily_message
 string reminder_release
 string reminder_release_desc
 string removed

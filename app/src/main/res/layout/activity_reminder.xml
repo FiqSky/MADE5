@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_daily" />
 
     <Switch
-        android:id="@+id/sw_daily"
+        android:id="@+id/switch_daily"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_release" />
 
     <Switch
-        android:id="@+id/sw_release"
+        android:id="@+id/switch_release"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"

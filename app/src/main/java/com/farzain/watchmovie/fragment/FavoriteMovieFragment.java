@@ -1,6 +1,8 @@
 package com.farzain.watchmovie.fragment;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -21,6 +23,7 @@ import com.farzain.watchmovie.activity.MovieInfoActivity;
 import com.farzain.watchmovie.activity.ReminderActivity;
 import com.farzain.watchmovie.adapter.ListMovieAdapter;
 import com.farzain.watchmovie.db.FavoriteHelper;
+import com.farzain.watchmovie.db.MappingHelper;
 
 import java.util.ArrayList;
 
@@ -77,10 +80,14 @@ public class FavoriteMovieFragment extends Fragment {
     public void onStart() {
         super.onStart();
         helper.open();
+        Cursor cursor = getContext().getContentResolver().query(CONTENT_URI_MOVIE, null, null, null, null);
         listMovie.clear();
-        listMovie.addAll(helper.getAllFavoriteMovie());
+//        listMovie.addAll(helper.getAllFavoriteMovie());
+        listMovie.addAll(MappingHelper.mapCursorToArrayListMovie(cursor));
         adapter.setData(listMovie);
         adapter.notifyDataSetChanged();
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
         adapter.setOnItemClickCallback(new ListMovieAdapter.OnItemClickCallback() {
             @Override
@@ -94,6 +101,8 @@ public class FavoriteMovieFragment extends Fragment {
 
     private void showSelectedMovie(Movie movie) {
         Intent moveWithObjectActivity = new Intent(getContext(), MovieInfoActivity.class);
+        Uri uri = Uri.parse(CONTENT_URI_MOVIE + "/" + movie.getId());
+        moveWithObjectActivity.setData(uri);
         moveWithObjectActivity.putExtra(MovieInfoActivity.EXTRA_MOVIE, movie);
         startActivity(moveWithObjectActivity);
     }

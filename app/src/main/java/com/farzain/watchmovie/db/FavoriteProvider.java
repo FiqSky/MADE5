@@ -38,7 +38,7 @@ public class FavoriteProvider extends ContentProvider {
 
     @Override
     public boolean onCreate() {
-        helper.open();
+//        helper.open();
         helper = FavoriteHelper.getInstance(getContext());
         return true;
     }

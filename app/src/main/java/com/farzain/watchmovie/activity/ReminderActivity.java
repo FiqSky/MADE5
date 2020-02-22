@@ -31,8 +31,8 @@ public class ReminderActivity extends AppCompatActivity {
         releaseReminderReceiver = new ReleaseReminderReceiver();
         dailyReminderReceiver = new DailyReminderReceiver();
 
-        dailySwitch = findViewById(R.id.sw_daily);
-        releaseSwitch = findViewById(R.id.sw_release);
+        dailySwitch = findViewById(R.id.switch_daily);
+        releaseSwitch = findViewById(R.id.switch_release);
 
         loadPref();
         dailySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

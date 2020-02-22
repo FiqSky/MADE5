@@ -2,6 +2,8 @@ package com.farzain.watchmovie.fragment;
 
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,8 +20,11 @@ import com.farzain.watchmovie.Series;
 import com.farzain.watchmovie.activity.SeriesInfoActivity;
 import com.farzain.watchmovie.adapter.ListSeriesAdapter;
 import com.farzain.watchmovie.db.FavoriteHelper;
+import com.farzain.watchmovie.db.MappingHelper;
 
 import java.util.ArrayList;
+
+import static com.farzain.watchmovie.db.DatabaseContract.CONTENT_URI_SERIES;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,10 +64,14 @@ public class FavoriteSeriesFragment extends Fragment {
     public void onStart() {
         super.onStart();
         helper.open();
+        Cursor cursor = getContext().getContentResolver().query(CONTENT_URI_SERIES, null, null, null, null);
         listSeries.clear();
-        listSeries.addAll(helper.getAllFavoriteSeries());
+//        listSeries.addAll(helper.getAllFavoriteSeries());
+        listSeries.addAll(MappingHelper.mapCursorToArrayListSeries(cursor));
         adapter.setSeriesData(listSeries);
         adapter.notifyDataSetChanged();
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
         adapter.setOnItemClickCallback(new ListSeriesAdapter.OnItemClickCallback() {
             @Override
@@ -75,6 +84,8 @@ public class FavoriteSeriesFragment extends Fragment {
 
     private void showSelectedSeries(Series series) {
         Intent moveWithObjectActivity = new Intent(getContext(), SeriesInfoActivity.class);
+        Uri uri = Uri.parse(CONTENT_URI_SERIES + "/" + series.getId());
+        moveWithObjectActivity.setData(uri);
         moveWithObjectActivity.putExtra(SeriesInfoActivity.EXTRA_SERIES, series);
         startActivity(moveWithObjectActivity);
     }
