@@ -2,17 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/search_btn"
+        android:id="@+id/search"
         android:icon="@drawable/ic_search"
         android:title="@string/search"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
         app:showAsAction="collapseActionView|ifRoom" />
     <item
-        android:id="@+id/action_change_language"
-        android:title="@string/change_language_settings"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/action_change_settings"
+        android:id="@+id/reminder"
         android:title="@string/setting"
-        app:showAsAction="never" />
+        android:icon="@drawable/ic_notifications"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/language"
+        android:title="@string/change_language_settings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always" />
 </menu>

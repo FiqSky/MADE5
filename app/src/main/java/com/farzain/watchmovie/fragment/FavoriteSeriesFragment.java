@@ -5,7 +5,11 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -17,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.farzain.watchmovie.R;
 import com.farzain.watchmovie.Series;
+import com.farzain.watchmovie.activity.ReminderActivity;
 import com.farzain.watchmovie.activity.SeriesInfoActivity;
 import com.farzain.watchmovie.adapter.ListSeriesAdapter;
 import com.farzain.watchmovie.db.FavoriteHelper;
@@ -44,6 +49,7 @@ public class FavoriteSeriesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        setHasOptionsMenu(true);
         return inflater.inflate(R.layout.fragment_favorite_series, container, false);
     }
 
@@ -57,7 +63,26 @@ public class FavoriteSeriesFragment extends Fragment {
 
         helper = FavoriteHelper.getInstance(getContext());
         listSeries = new ArrayList<>();
-        adapter = new ListSeriesAdapter();
+        adapter = new ListSeriesAdapter(getContext());
+    }
+
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        inflater.inflate(R.menu.main_menu, menu);
+        menu.findItem(R.id.search).setVisible(false);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.language) {
+            Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(intent);
+        } else if (item.getItemId() == R.id.reminder) {
+            Intent intent = new Intent(getActivity(), ReminderActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

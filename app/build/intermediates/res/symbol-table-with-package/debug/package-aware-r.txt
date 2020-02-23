@@ -1406,8 +1406,10 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_notifications
 drawable ic_notifications_black_24dp
 drawable ic_search
+drawable ic_settings
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1484,8 +1486,6 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
-id action_change_language
-id action_change_settings
 id action_container
 id action_context_bar
 id action_divider
@@ -1594,6 +1594,7 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id labeled
+id language
 id largeLabel
 id layout_button
 id left
@@ -1668,6 +1669,7 @@ id progressBarSeries
 id progress_circular
 id progress_horizontal
 id radio
+id reminder
 id right
 id right_icon
 id right_side
@@ -1685,9 +1687,9 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id search
 id search_badge
 id search_bar
-id search_btn
 id search_button
 id search_close_btn
 id search_edit_frame
@@ -1983,6 +1985,7 @@ string fab_transformation_sheet_behavior
 string failed_add
 string failed_remove
 string favorite
+string hello_blank_fragment
 string hello_movie_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
@@ -2044,6 +2047,7 @@ string removed
 string search
 string search_menu_title
 string search_movie_hint
+string search_series_hint
 string series_name
 string setting
 string sinopsis

@@ -19,13 +19,13 @@ import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.farzain.watchmovie.Movie;
 import com.farzain.watchmovie.R;
 import com.farzain.watchmovie.activity.MovieInfoActivity;
+import com.farzain.watchmovie.activity.ReminderActivity;
 import com.farzain.watchmovie.adapter.ListMovieAdapter;
 import com.farzain.watchmovie.viewmodel.MovieViewModel;
 
@@ -49,6 +49,7 @@ public class MovieFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_movie, container, false);
         progressBar = view.findViewById(R.id.progressBar);
         rvMovies = view.findViewById(R.id.rv_movies);
+        setHasOptionsMenu(true);
         showRecycleview();
         return view;
     }
@@ -56,59 +57,31 @@ public class MovieFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-//        rvMovies.setHasFixedSize(true);
-
-//        adapter = new ListMovieAdapter();
-//        RecyclerView recyclerView = view.findViewById(R.id.rv_movies);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
-//        recyclerView.setAdapter(adapter);
-
-//        MovieViewModel movieViewModel = ViewModelProviders.of(this).get(MovieViewModel.class);
-//        movieViewModel.getMovies().observe(getViewLifecycleOwner(), getMovie);
-//        movieViewModel.setMovies("EXTRA_MOVIE");
-//
-//        Loading(true);
-    }
-
-//    private Observer<ArrayList<Movie>> getMovie = new Observer<ArrayList<Movie>>() {
-//        @Override
-//        public void onChanged(ArrayList<Movie> movie) {
-//            if (movie != null) {
-//                adapter.setData(movie);
-//            }
-//
-//            Loading(false);
-//
-//        }
-//    };
-
-    private void Loading(Boolean state) {
-        if (state) {
-            progressBar.setVisibility(View.VISIBLE);
-        } else {
-            progressBar.setVisibility(View.GONE);
-        }
     }
 
     @Override
-    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.main_menu, menu);
         searchMovie(menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
 
-    /*@Override
+    @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.action_change_language) {
+        if (item.getItemId() == R.id.language) {
             Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(intent);
+        }else if (item.getItemId() == R.id.reminder) {
+            Intent intent = new Intent(getActivity(), ReminderActivity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
-    }*/
+    }
 
     private void showRecycleview() {
         rvMovies.setLayoutManager(new LinearLayoutManager(this.getContext()));
-        adapter = new ListMovieAdapter();
+        adapter = new ListMovieAdapter(list);
+        adapter.notifyDataSetChanged();
         rvMovies.setAdapter(adapter);
 
         MovieViewModel moviesViewModel = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(MovieViewModel.class);
@@ -120,7 +93,6 @@ public class MovieFragment extends Fragment {
             public void onItemClicked(Movie data) {
                 showSelectedMovie(data);
             }
-
         });
 
         if (getActivity() != null) {
@@ -148,7 +120,7 @@ public class MovieFragment extends Fragment {
         SearchManager searchManager = (SearchManager) getContext().getSystemService(Context.SEARCH_SERVICE);
         final MovieViewModel movieViewModel = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(MovieViewModel.class);
         if (searchManager != null) {
-            final SearchView searchView = (SearchView) (menu.findItem(R.id.search_btn)).getActionView();
+            final SearchView searchView = (SearchView) (menu.findItem(R.id.search)).getActionView();
             searchView.setSearchableInfo(searchManager.getSearchableInfo(getActivity().getComponentName()));
             searchView.setQueryHint(getResources().getString(R.string.search_movie_hint));
             searchView.setIconifiedByDefault(false);
@@ -176,7 +148,7 @@ public class MovieFragment extends Fragment {
                 }
             });
 
-            MenuItem searchItem = menu.findItem(R.id.search_btn);
+            MenuItem searchItem = menu.findItem(R.id.search);
             searchItem.setOnActionExpandListener(new MenuItem.OnActionExpandListener() {
                 @Override
                 public boolean onMenuItemActionExpand(MenuItem item) {
@@ -189,6 +161,14 @@ public class MovieFragment extends Fragment {
                     return true;
                 }
             });
+        }
+    }
+
+    private void Loading(Boolean state) {
+        if (state) {
+            progressBar.setVisibility(View.VISIBLE);
+        } else {
+            progressBar.setVisibility(View.GONE);
         }
     }
 }

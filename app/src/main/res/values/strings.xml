@@ -40,4 +40,8 @@
     <string name="empty_text">empty</string>
     <string name="reminder_daily_message">Hey ada yang baru ni yuk lihat</string>
     <string name="search_movie_hint">search_movie</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_series_hint">Cari Acara Tv</string>
 </resources>

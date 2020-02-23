@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -44,6 +45,7 @@ public class FavoriteMovieFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        setHasOptionsMenu(true);
         return inflater.inflate(R.layout.fragment_favorite_movie, container, false);
     }
 
@@ -57,19 +59,22 @@ public class FavoriteMovieFragment extends Fragment {
 
         helper = FavoriteHelper.getInstance(getContext());
         listMovie = new ArrayList<>();
-        adapter = new ListMovieAdapter();
+        adapter = new ListMovieAdapter(getContext());
     }
 
     @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         inflater.inflate(R.menu.main_menu, menu);
-        menu.findItem(R.id.search_btn).setVisible(false);
+        menu.findItem(R.id.search).setVisible(false);
         super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.action_change_settings) {
+        if (item.getItemId() == R.id.language) {
+            Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(intent);
+        } else if (item.getItemId() == R.id.reminder) {
             Intent intent = new Intent(getActivity(), ReminderActivity.class);
             startActivity(intent);
         }

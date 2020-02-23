@@ -116,6 +116,10 @@
         "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\layout\\activity_reminder.xml"
     },
     {
+        "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_notifications.xml.flat",
+        "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\drawable\\ic_notifications.xml"
+    },
+    {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_close_circle.xml.flat",
         "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\drawable\\ic_mtrl_chip_close_circle.xml"
     },
@@ -2482,6 +2486,10 @@
     {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\drawable\\ic_settings.xml"
     },
     {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_text.xml.flat",

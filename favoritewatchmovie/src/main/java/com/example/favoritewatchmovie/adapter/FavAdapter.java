@@ -28,19 +28,6 @@ public class FavAdapter extends RecyclerView.Adapter<FavAdapter.FavViewHolder> {
     fav = new ArrayList<>();
     }
 
-    private void add(Fav favorite) {
-        fav.add(favorite);
-        notifyItemInserted(fav.size() - 1);
-        notifyDataSetChanged();
-    }
-
-    public void addAll(List<Fav> fav) {
-        for (Fav favorite : fav) {
-            add(favorite);
-        }
-        notifyDataSetChanged();
-    }
-
     public void clear() {
         while (getItemCount() > 0) {
             remove(getItem());
@@ -97,14 +84,6 @@ public class FavAdapter extends RecyclerView.Adapter<FavAdapter.FavViewHolder> {
                     .placeholder(R.color.colorAccent)
                     .dontAnimate()
                     .into(poster_path);
-//                    context.getString(R.string.txt_detail_release_date), favorite.getReleaseDate()));
-
-//            viewForeground.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    Toast.makeText(context, posterTitle.getText(), Toast.LENGTH_SHORT).show();
-//                }
-//            });
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.farzain.watchmovie.adapter;
 
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +20,16 @@ import java.util.ArrayList;
 
 public class ListSeriesAdapter extends RecyclerView.Adapter<ListSeriesAdapter.ListViewHolder> {
     private ArrayList<Series> listSeries = new ArrayList<>();
+    private Context context;
+
+    public ListSeriesAdapter(Context context){
+        this.context = context;
+        listSeries = new ArrayList<>();
+    }
+
+    public ListSeriesAdapter(ArrayList<Series> list) {
+        this.listSeries = list;
+    }
 
     public void setSeriesData(ArrayList<Series> seriesData) {
         listSeries.clear();
@@ -79,6 +90,8 @@ public class ListSeriesAdapter extends RecyclerView.Adapter<ListSeriesAdapter.Li
             Series dataseries = listSeries.get(position);
             dataseries.setName(dataseries.getName());
             dataseries.setSynopsis(dataseries.getSynopsis());
+            dataseries.setRelease(dataseries.getRelease());
+            dataseries.setPhoto(dataseries.getPhoto());
 
             Intent moveSeriesIntent = new Intent(itemView.getContext(), SeriesInfoActivity.class);
             moveSeriesIntent.putExtra(SeriesInfoActivity.EXTRA_SERIES, dataseries);

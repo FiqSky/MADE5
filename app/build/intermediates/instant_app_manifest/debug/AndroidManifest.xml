@@ -46,7 +46,6 @@
         <provider
             android:name="com.farzain.watchmovie.db.FavoriteProvider"
             android:authorities="com.farzain.watchmovie"
-            android:enabled="true"
             android:exported="true"
             android:readPermission="com.farzain.watchmovie.READ_DATABASE"
             android:writePermission="com.farzain.watchmovie.WRITE_DATABASE" />

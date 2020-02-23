@@ -27,6 +27,7 @@
     <string name="removed">Removed Successfully</string>
     <string name="search">Search</string>
     <string name="search_movie_hint">search_movie</string>
+    <string name="search_series_hint">Cari Acara Tv</string>
     <string name="series_name">Movie Name</string>
     <string name="setting">Settings</string>
     <string name="sinopsis">Sunopsis</string>

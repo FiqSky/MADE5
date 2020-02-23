@@ -1,8 +1,11 @@
 package com.farzain.watchmovie.activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.Preference;
+import android.provider.Settings;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
@@ -75,4 +78,15 @@ public class ReminderActivity extends AppCompatActivity {
         dailySwitch.setChecked(sharedPreferences.getBoolean(DAILY, false));
         releaseSwitch.setChecked(sharedPreferences.getBoolean(RELEASE, false));
     }
+
+    /*@Override
+    public boolean onPreferenceClick(Preference preference) {
+        String key = preference.getKey();
+
+        if (key.equals(getString(R.string.key_setting_language))) {
+            Intent languageIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(languageIntent);
+        }
+        return true;
+    }*/
 }

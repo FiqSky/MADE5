@@ -57,6 +57,7 @@
     <string name="search">Cari</string>
     <string msgid="730395136688082741" name="search_menu_title">"Telusuri"</string>
     <string name="search_movie_hint">search_movie</string>
+    <string name="search_series_hint">Cari Acara Tv</string>
     <string name="series_name">Nama Acara TV</string>
     <string name="setting">Pengaturan</string>
     <string name="sinopsis">Sinopsis</string>

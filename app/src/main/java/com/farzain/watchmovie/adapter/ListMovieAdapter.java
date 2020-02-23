@@ -1,5 +1,6 @@
 package com.farzain.watchmovie.adapter;
 
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +20,16 @@ import java.util.ArrayList;
 
 public class ListMovieAdapter extends RecyclerView.Adapter<ListMovieAdapter.ListViewHolder> {
     private ArrayList<Movie> listMovie = new ArrayList<>();
+    private Context context;
+
+    public ListMovieAdapter(Context context){
+        this.context = context;
+        listMovie = new ArrayList<>();
+    }
+
+    public ListMovieAdapter(ArrayList<Movie> list) {
+        this.listMovie = list;
+    }
 
     public void setData(ArrayList<Movie> data) {
         listMovie.clear();

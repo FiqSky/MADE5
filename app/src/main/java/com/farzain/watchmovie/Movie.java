@@ -58,6 +58,14 @@ public class Movie implements Parcelable {
         this.photo = getColumnString(cursor, POSTER_PATH);
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
@@ -102,13 +110,5 @@ public class Movie implements Parcelable {
         dest.writeString(synopsis);
         dest.writeString(photo);
         dest.writeString(release);
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 }

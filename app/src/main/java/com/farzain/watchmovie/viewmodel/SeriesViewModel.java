@@ -23,7 +23,7 @@ public class SeriesViewModel extends ViewModel {
     private static final String API_KEY = "90f828ee41b521c823dd351d6b67affa";
     private MutableLiveData<ArrayList<Series>> listSeries = new MutableLiveData<>();
 
-    public void setSeries(final String series) {
+    public void setSeries() {
         AsyncHttpClient client = new AsyncHttpClient();
         final ArrayList<Series> listItem = new ArrayList<>();
 
@@ -62,7 +62,41 @@ public class SeriesViewModel extends ViewModel {
             }
 
         });
+    }
+    public void searchSeries(String query) {
+        AsyncHttpClient client = new AsyncHttpClient();
+        final ArrayList<Series> listItems = new ArrayList<>();
+        String url = "https://api.themoviedb.org/3/search/tv?api_key=" + API_KEY + "&language=en-US&query=" + query;
+        Log.d(TAG, "searchSeries: " + url);
 
+        client.get(url, new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                try {
+                    String result = new String(responseBody);
+                    JSONObject responseObject = new JSONObject(result);
+                    JSONArray list = responseObject.getJSONArray("results");
+                    for (int i = 0; i < list.length(); i++) {
+                        JSONObject seriesObject = list.getJSONObject(i);
+                        Series series = new Series();
+                        series.setId(seriesObject.getInt("id"));
+                        series.setName(seriesObject.getString("name"));
+                        series.setSynopsis(seriesObject.getString("overview"));
+                        series.setRelease(seriesObject.getString("first_air_date"));
+                        series.setPhoto("https://image.tmdb.org/t/p/w185" + seriesObject.getString("poster_path"));
+                        listItems.add(series);
+                    }
+                    listSeries.postValue(listItems);
+                } catch (Exception e) {
+                    Log.d("Exception", "ERROR: " + e.getMessage());
+                }
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                Log.d("onFailure", "ERROR: " + error.getMessage());
+            }
+        });
     }
 
     public LiveData<ArrayList<Series>> getSeries() {
