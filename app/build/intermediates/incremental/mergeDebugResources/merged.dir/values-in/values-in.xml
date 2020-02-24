@@ -27,30 +27,21 @@
     <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Bagikan dengan"</string>
     <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Bagikan dengan <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Ciutkan"</string>
-    <string name="add_widget">Tambah widget</string>
     <string name="added">Berhasil menambahkan</string>
     <string name="app_name">WatchMovie</string>
     <string name="appwidget_text">FILM KESUKAAN MU</string>
     <string name="change_language_settings">Ubah Bahasa</string>
-    <string name="check_these">check these out</string>
     <string name="description">Deskripsi</string>
     <string name="empty_text">kosong</string>
     <string name="failed_add">Gagal menambahkan</string>
     <string name="failed_remove">Gagal menghapus</string>
     <string name="favorite">Favorit</string>
-    <string name="has_been_released">has been released</string>
-    <string name="hello_movie_fragment">Hai Fragment Film</string>
-    <string name="image_poster">Deskripsi Gambar</string>
     <string name="informasi">Informasi</string>
-    <string name="look">Lihat</string>
-    <string name="movie_director">Sutradara</string>
-    <string name="movie_genre">Genre</string>
     <string name="movie_release">Rilis</string>
     <string name="movies_name">Nama Film</string>
     <string name="movies_synopsis">Sinopsis Film</string>
     <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Kembali ke atas"</string>
     <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Buka panel navigasi"</string>
-    <string name="new_shows">New Movie</string>
     <string name="reminder_daily">Pengingat Harian</string>
     <string name="reminder_daily_desc">Mengirimkan notifikasi ke pengguna untuk kembali ke Aplikasi Movie Catalogue. Daily reminder harus selalu berjalan tiap jam 7 pagi.</string>
     <string name="reminder_daily_message">Hei, ada sesuatu yang baru</string>
@@ -63,12 +54,7 @@
     <string name="search_series_hint">Cari AcaraTv</string>
     <string name="series_name">Nama Acara TV</string>
     <string name="setting">Pengaturan</string>
-    <string name="sinopsis">Sinopsis</string>
     <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
-    <string name="three_of">tiga dari</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_home">Halaman Utama</string>
     <string name="title_movie">Film</string>
-    <string name="title_notifications">Notifikasi</string>
     <string name="title_series">Acara TV</string>
 </resources>

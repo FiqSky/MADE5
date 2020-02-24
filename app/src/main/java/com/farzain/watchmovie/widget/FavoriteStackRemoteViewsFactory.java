@@ -8,7 +8,6 @@ import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.Target;
 import com.farzain.watchmovie.Movie;
 import com.farzain.watchmovie.R;
 import com.farzain.watchmovie.Series;

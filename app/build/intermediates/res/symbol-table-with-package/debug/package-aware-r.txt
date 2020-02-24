@@ -800,7 +800,6 @@ color checkbox_themeable_attribute_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
-color colorSubTitle
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1028,8 +1027,6 @@ dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
-dimen activity_horizontal_margin
-dimen activity_vertical_margin
 dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -1281,7 +1278,6 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
-dimen widget_margin
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -1370,7 +1366,6 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
-drawable baseline_alarm_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1388,12 +1383,10 @@ drawable design_snackbar_background
 drawable example_appwidget_preview
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
-drawable ic_dashboard_black_24dp
 drawable ic_edit_black_24dp
 drawable ic_favorite
 drawable ic_favorite_off
 drawable ic_favorite_on
-drawable ic_home_black_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
@@ -1409,7 +1402,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_notifications
 drawable ic_notifications_black_24dp
 drawable ic_search
-drawable ic_settings
+drawable language
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1504,7 +1497,6 @@ id all
 id always
 id async
 id auto
-id banner_text
 id barrier
 id beginning
 id blocking
@@ -1512,7 +1504,6 @@ id bottom
 id buttonPanel
 id cancel_action
 id cancel_button
-id card_view
 id center
 id center_horizontal
 id center_vertical
@@ -1541,7 +1532,6 @@ id date_picker_actions
 id decor_content_parent
 id default_activity_button
 id desc_daily
-id desc_release
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1578,7 +1568,6 @@ id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
-id guideline
 id guidelineHorizontal
 id hideable
 id home
@@ -1607,7 +1596,6 @@ id media_actions
 id message
 id middle
 id mini
-id mobile_navigation
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -1754,7 +1742,6 @@ id time
 id title
 id titleDividerNoCustom
 id title_information
-id title_release
 id title_synopsis
 id title_template
 id top
@@ -1964,7 +1951,6 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string add_widget
 string added
 string app_name
 string appbar_scrolling_view_behavior
@@ -1974,7 +1960,6 @@ string change_language_settings
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
-string check_these
 string chip_text
 string clear_text_end_icon_content_description
 string description
@@ -1986,15 +1971,9 @@ string fab_transformation_sheet_behavior
 string failed_add
 string failed_remove
 string favorite
-string has_been_released
-string hello_movie_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
-string image_poster
 string informasi
-string look
-string movie_director
-string movie_genre
 string movie_release
 string movies_name
 string movies_synopsis
@@ -2034,7 +2013,6 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
-string new_shows
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -2052,13 +2030,8 @@ string search_movie_hint
 string search_series_hint
 string series_name
 string setting
-string sinopsis
 string status_bar_notification_info_overflow
-string three_of
-string title_dashboard
-string title_home
 string title_movie
-string title_notifications
 string title_series
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
@@ -2437,14 +2410,6 @@ style TextAppearance_MaterialComponents_Subtitle2
 style TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style TextAppearance_Widget_AppCompat_Toolbar_Title
-style TextContent
-style TextContent_Black
-style TextContent_Small
-style TextContent_Small_White
-style TextContent_Subtitle
-style TextSpec
-style TextSpec_Field
-style TextSpec_Value
 style Theme_AppCompat
 style Theme_AppCompat_CompactMenu
 style Theme_AppCompat_DayNight

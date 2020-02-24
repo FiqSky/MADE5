@@ -18,7 +18,6 @@ import androidx.core.content.ContextCompat;
 
 import com.farzain.watchmovie.Movie;
 import com.farzain.watchmovie.R;
-import com.farzain.watchmovie.activity.MovieInfoActivity;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
@@ -55,7 +54,7 @@ public class ReleaseReminderReceiver extends BroadcastReceiver {
             String url = "https://api.themoviedb.org/3/discover/movie?api_key=" + API_KEY + "&primary_release_date.gte=" + today + "&primary_release_date.lte=" + today;
             Log.d(TAG, "setMovies: " + url);
 
-            client.get(url, new JsonHttpResponseHandler(){
+            client.get(url, new JsonHttpResponseHandler() {
                 @SuppressLint("ResourceType")
                 @Override
                 public void onSuccess(int statusCode, Header[] headers, JSONObject responseBody) {
@@ -90,25 +89,16 @@ public class ReleaseReminderReceiver extends BroadcastReceiver {
     public void releaseReminderOn(Context context) {
         releaseReminderOff(context);
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-//        Intent intent = new Intent(context, ReleaseReminderReceiver.class);
-//        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, RELEASE_ID, intent, 0);
-//        intent.putExtra(EXTRA_TYPE, RELEASE_ID);
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.HOUR_OF_DAY, 8);
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
 
         alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, getPendingIntent(context));
-//        if (alarmManager != null) {
-//            alarmManager.setInexactRepeating(android.app.AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), android.app.AlarmManager.INTERVAL_DAY, pendingIntent);
-//        }
     }
 
     public void releaseReminderOff(Context context) {
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-//        Intent intent = new Intent(context, ReleaseReminderReceiver.class);
-//        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, RELEASE_ID, intent, 0);
-//        pendingIntent.cancel();
         if (alarmManager != null) {
             alarmManager.cancel(getPendingIntent(context));
         }
@@ -117,14 +107,6 @@ public class ReleaseReminderReceiver extends BroadcastReceiver {
     private PendingIntent getPendingIntent(Context context) {
         Intent intent = new Intent(context, ReleaseReminderReceiver.class);
         return PendingIntent.getBroadcast(context, RELEASE_ID, intent, PendingIntent.FLAG_CANCEL_CURRENT);
-        /*Intent intent;
-        if (notificationId == RELEASE_ID) {
-            intent = new Intent(context, MovieInfoActivity.class);
-            intent.putExtra(MovieInfoActivity.EXTRA_MOVIE, item);
-        } else {
-            return null;
-        }
-        return PendingIntent.getActivity(context, notificationId, intent, 0);*/
     }
 
     private void showAlarmNotification(Context context, String title, @Nullable String message, int notifId, @Nullable Movie item) {

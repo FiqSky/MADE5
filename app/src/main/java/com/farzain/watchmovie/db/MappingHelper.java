@@ -8,14 +8,14 @@ import com.farzain.watchmovie.Series;
 import java.util.ArrayList;
 
 import static android.provider.BaseColumns._ID;
-import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.TITLE;
 import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.OVERVIEW;
-import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.RELESE_DATE;
 import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.POSTER_PATH;
-import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.TITLE_SERIES;
+import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.RELESE_DATE;
+import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.TITLE;
 import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.OVERVIEW_SERIES;
-import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.RELESE_DATE_SERIES;
 import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.POSTER_PATH_SERIES;
+import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.RELESE_DATE_SERIES;
+import static com.farzain.watchmovie.db.DatabaseContract.SeriesColumns.TITLE_SERIES;
 
 public class MappingHelper {
     public static ArrayList<Movie> mapCursorToArrayListMovie(Cursor itemCursor) {
@@ -28,7 +28,7 @@ public class MappingHelper {
             String relese = itemCursor.getString(itemCursor.getColumnIndexOrThrow(RELESE_DATE));
             String photo = itemCursor.getString(itemCursor.getColumnIndexOrThrow(POSTER_PATH));
 
-            itemListMovie.add(new Movie(id, title,overview, relese, photo));
+            itemListMovie.add(new Movie(id, title, overview, relese, photo));
         }
         return itemListMovie;
     }
@@ -43,7 +43,7 @@ public class MappingHelper {
             String relese = itemCursor.getString(itemCursor.getColumnIndexOrThrow(RELESE_DATE_SERIES));
             String photo = itemCursor.getString(itemCursor.getColumnIndexOrThrow(POSTER_PATH_SERIES));
 
-            itemListSeries.add(new Series(id, title,overview, relese, photo));
+            itemListSeries.add(new Series(id, title, overview, relese, photo));
         }
         return itemListSeries;
     }

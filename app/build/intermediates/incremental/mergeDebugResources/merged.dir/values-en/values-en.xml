@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="add_widget">Add widget</string>
     <string name="added">Added Successfully</string>
     <string name="app_name">WatchMovie</string>
     <string name="appwidget_text">YOUR FAVORITE MOVIE</string>
     <string name="change_language_settings">Change Language</string>
-    <string name="check_these">check these out</string>
     <string name="description">Description</string>
     <string name="empty_text">empty</string>
     <string name="failed_add">Failed to Add</string>
     <string name="failed_remove">Failed to remove</string>
     <string name="favorite">Favorite</string>
-    <string name="has_been_released">has been released</string>
-    <string name="hello_movie_fragment">Hello Movie fragment</string>
-    <string name="image_poster">Image Description</string>
     <string name="informasi">Information</string>
-    <string name="look">Look</string>
-    <string name="movie_director">Direcotr</string>
-    <string name="movie_genre">Genre</string>
     <string name="movie_release">Release</string>
     <string name="movies_name">Movie Name</string>
     <string name="movies_synopsis">Movie Synopsis</string>
-    <string name="new_shows">New Movie</string>
     <string name="reminder_daily">Daily Reminder</string>
     <string name="reminder_daily_desc">Send notifications to users to return to the Movie Catalog Application. Daily reminder must always run every 7 o`clock in the morning.</string>
     <string name="reminder_daily_message">Hey, there`s something new</string>
@@ -33,11 +24,6 @@
     <string name="search_series_hint">Search Series</string>
     <string name="series_name">Movie Name</string>
     <string name="setting">Settings</string>
-    <string name="sinopsis">Sunopsis</string>
-    <string name="three_of">tiga dari</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_home">Home</string>
     <string name="title_movie">Movie</string>
-    <string name="title_notifications">Notifications</string>
     <string name="title_series">Series</string>
 </resources>

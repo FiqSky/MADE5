@@ -88,7 +88,7 @@ public class SeriesInfoActivity extends AppCompatActivity {
     private void addToFavorite() {
         helper.open();
         long result = helper.insertSeries(this.series);
-        if (result > a){
+        if (result > a) {
             FavoriteImageBannerWidget.updateWidget(this);
             Toast.makeText(this, getResources().getString(R.string.added), Toast.LENGTH_SHORT).show();
         } else

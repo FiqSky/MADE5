@@ -22,7 +22,7 @@ public class ListSeriesAdapter extends RecyclerView.Adapter<ListSeriesAdapter.Li
     private ArrayList<Series> listSeries = new ArrayList<>();
     private Context context;
 
-    public ListSeriesAdapter(Context context){
+    public ListSeriesAdapter(Context context) {
         this.context = context;
         listSeries = new ArrayList<>();
     }

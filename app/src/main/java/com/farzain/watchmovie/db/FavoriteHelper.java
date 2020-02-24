@@ -13,7 +13,6 @@ import com.farzain.watchmovie.Series;
 
 import java.util.ArrayList;
 
-
 import static android.provider.BaseColumns._ID;
 import static androidx.constraintlayout.widget.Constraints.TAG;
 import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.OVERVIEW;
@@ -110,6 +109,7 @@ public class FavoriteHelper {
         Log.d(TAG, "insertMovie: " + contentValues);
         return database.insert(DATABASE_MOVIE, null, contentValues);
     }
+
     public long insertMovieProvider(ContentValues values) {
         return database.insert(DATABASE_MOVIE, null, values);
     }

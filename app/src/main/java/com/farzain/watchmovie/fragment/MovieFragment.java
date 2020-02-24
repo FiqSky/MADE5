@@ -71,7 +71,7 @@ public class MovieFragment extends Fragment {
         if (item.getItemId() == R.id.language) {
             Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
             startActivity(intent);
-        }else if (item.getItemId() == R.id.reminder) {
+        } else if (item.getItemId() == R.id.reminder) {
             Intent intent = new Intent(getActivity(), ReminderActivity.class);
             startActivity(intent);
         }

@@ -5,10 +5,10 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import static android.provider.BaseColumns._ID;
-import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.TITLE;
 import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.OVERVIEW;
-import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.RELESE_DATE;
 import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.POSTER_PATH;
+import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.RELESE_DATE;
+import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.TITLE;
 import static com.farzain.watchmovie.db.DatabaseContract.getColumnInt;
 import static com.farzain.watchmovie.db.DatabaseContract.getColumnString;
 
@@ -42,7 +42,7 @@ public class Movie implements Parcelable {
     public Movie() {
     }
 
-    public Movie(int id,String name,String synopsis,String release, String photo) {
+    public Movie(int id, String name, String synopsis, String release, String photo) {
         this.id = id;
         this.name = name;
         this.synopsis = synopsis;
@@ -51,9 +51,9 @@ public class Movie implements Parcelable {
     }
 
     public Movie(Cursor cursor) {
-        this.id = getColumnInt(cursor,_ID);
-        this.name = getColumnString(cursor,TITLE);
-        this.synopsis = getColumnString(cursor,OVERVIEW);
+        this.id = getColumnInt(cursor, _ID);
+        this.name = getColumnString(cursor, TITLE);
+        this.synopsis = getColumnString(cursor, OVERVIEW);
         this.release = getColumnString(cursor, RELESE_DATE);
         this.photo = getColumnString(cursor, POSTER_PATH);
     }

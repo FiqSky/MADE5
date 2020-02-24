@@ -22,10 +22,10 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.farzain.watchmovie.Series;
 import com.farzain.watchmovie.R;
-import com.farzain.watchmovie.activity.SeriesInfoActivity;
+import com.farzain.watchmovie.Series;
 import com.farzain.watchmovie.activity.ReminderActivity;
+import com.farzain.watchmovie.activity.SeriesInfoActivity;
 import com.farzain.watchmovie.adapter.ListSeriesAdapter;
 import com.farzain.watchmovie.viewmodel.SeriesViewModel;
 
@@ -72,7 +72,7 @@ public class SeriesFragment extends Fragment {
         if (item.getItemId() == R.id.language) {
             Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
             startActivity(intent);
-        }else if (item.getItemId() == R.id.reminder) {
+        } else if (item.getItemId() == R.id.reminder) {
             Intent intent = new Intent(getActivity(), ReminderActivity.class);
             startActivity(intent);
         }

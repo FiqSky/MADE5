@@ -896,10 +896,6 @@
         "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\anim\\btn_checkbox_to_unchecked_icon_null_animation.xml"
     },
     {
-        "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
-        "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
-    },
-    {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
@@ -1320,10 +1316,6 @@
         "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\767612e54049c1347a891905a7e9d5e4\\media-1.0.0\\res\\layout\\notification_media_action.xml"
     },
     {
-        "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baseline_alarm_24.xml.flat",
-        "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\drawable\\baseline_alarm_24.xml"
-    },
-    {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
@@ -1524,10 +1516,6 @@
         "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
-    },
-    {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_background_color.xml.flat",
         "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\color\\mtrl_chip_background_color.xml"
     },
@@ -1670,6 +1658,10 @@
     {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_transformation_sheet_expand_spec.xml.flat",
         "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\animator\\mtrl_fab_transformation_sheet_expand_spec.xml"
+    },
+    {
+        "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_language.png.flat",
+        "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\drawable\\language.png"
     },
     {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_design_ic_visibility.png.flat",
@@ -2482,10 +2474,6 @@
     {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
-    },
-    {
-        "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings.xml.flat",
-        "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\drawable\\ic_settings.xml"
     },
     {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",

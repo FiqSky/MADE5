@@ -63,6 +63,7 @@ public class SeriesViewModel extends ViewModel {
 
         });
     }
+
     public void searchSeries(String query) {
         AsyncHttpClient client = new AsyncHttpClient();
         final ArrayList<Series> listItems = new ArrayList<>();

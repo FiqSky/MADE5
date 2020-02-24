@@ -88,7 +88,7 @@ public class MovieInfoActivity extends AppCompatActivity {
 
     private void addToFavorite() {
         long result = helper.insertMovie(this.movie);
-        if (result > a){
+        if (result > a) {
             FavoriteImageBannerWidget.updateWidget(this);
             Toast.makeText(this, getResources().getString(R.string.added), Toast.LENGTH_SHORT).show();
         } else

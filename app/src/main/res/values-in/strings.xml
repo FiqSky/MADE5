@@ -1,11 +1,7 @@
 <resources>
     <string name="app_name">WatchMovie</string>
-    <string name="title_home">Halaman Utama</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifikasi</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_movie_fragment">Hai Fragment Film</string>
     <string name="title_movie">Film</string>
     <string name="movies_name">Nama Film</string>
     <string name="movies_synopsis">Sinopsis Film</string>
@@ -13,12 +9,7 @@
     <string name="series_name">Nama Acara TV</string>
     <string name="change_language_settings">Ubah Bahasa</string>
     <string name="description">Deskripsi</string>
-    <string name="look">Lihat</string>
-    <string name="sinopsis">Sinopsis</string>
     <string name="movie_release">Rilis</string>
-    <string name="image_poster">Deskripsi Gambar</string>
-    <string name="movie_director">Sutradara</string>
-    <string name="movie_genre">Genre</string>
     <string name="informasi">Informasi</string>
     <string name="favorite">Favorit</string>
 
@@ -36,13 +27,8 @@
     <string name="reminder_release">Pengingat Rilis</string>
     <string name="reminder_release_desc">Mengirimkan notifikasi ke pengguna semua film yang rilis hari ini selalu berjalan tiap jam 8 pagi.</string>
     <string name="appwidget_text">FILM KESUKAAN MU</string>
-    <string name="add_widget">Tambah widget</string>
     <string name="empty_text">kosong</string>
     <string name="reminder_daily_message">Hei, ada sesuatu yang baru</string>
     <string name="search_movie_hint">Cari Film</string>
     <string name="search_series_hint">Cari AcaraTv</string>
-    <string name="three_of">tiga dari</string>
-    <string name="has_been_released">has been released</string>
-    <string name="new_shows">New Movie</string>
-    <string name="check_these">check these out</string>
 </resources>

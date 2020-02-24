@@ -59,8 +59,6 @@ public class DailyReminderReceiver extends BroadcastReceiver {
     public void dailyReminderOn(Context context) {
         dailyReminderOff(context);
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-//        Intent intent = new Intent(context, DailyReminderReceiver.class);
-//        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, DAILY_ID, intent, 0);
 
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.HOUR_OF_DAY, 7);
@@ -68,16 +66,11 @@ public class DailyReminderReceiver extends BroadcastReceiver {
         calendar.set(Calendar.SECOND, 0);
 
         alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, getPendingIntent(context));
-
-        /*if (alarmManager != null) {
-            alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
-        }*/
     }
 
     public void dailyReminderOff(Context context) {
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(context, DailyReminderReceiver.class);
-//        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, DAILY_ID, intent, 0);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 1, intent, PendingIntent.FLAG_CANCEL_CURRENT);
         pendingIntent.cancel();
         if (alarmManager != null) {
@@ -85,7 +78,7 @@ public class DailyReminderReceiver extends BroadcastReceiver {
         }
     }
 
-    private PendingIntent getPendingIntent (Context context){
+    private PendingIntent getPendingIntent(Context context) {
         Intent intent = new Intent(context, DailyReminderReceiver.class);
         return PendingIntent.getBroadcast(context, DAILY_ID, intent, PendingIntent.FLAG_UPDATE_CURRENT);
     }

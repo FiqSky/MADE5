@@ -17,7 +17,7 @@ import com.farzain.watchmovie.R;
  */
 public class FavoriteImageBannerWidget extends AppWidgetProvider {
     private static final String TOAST_ACTION = "com.farzain.watchmovie.TOAST_ACTION";
-    public static final String EXTRA_ITEM  = "com.farzain.watchmovie.EXTRA_ITEM";
+    public static final String EXTRA_ITEM = "com.farzain.watchmovie.EXTRA_ITEM";
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
@@ -52,8 +52,8 @@ public class FavoriteImageBannerWidget extends AppWidgetProvider {
         super.onReceive(context, intent);
         if (intent.getAction() != null) {
             if (intent.getAction().equals(TOAST_ACTION)) {
-                int viewIndex = intent.getIntExtra(EXTRA_ITEM,1);
-                Toast.makeText(context,"Favorite ke : " + viewIndex, Toast.LENGTH_SHORT).show();
+                int viewIndex = intent.getIntExtra(EXTRA_ITEM, 1);
+                Toast.makeText(context, "Favorite ke : " + viewIndex, Toast.LENGTH_SHORT).show();
             }
         }
     }

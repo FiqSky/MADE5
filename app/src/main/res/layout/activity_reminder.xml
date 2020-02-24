@@ -46,7 +46,6 @@
         app:layout_constraintTop_toBottomOf="@id/desc_daily" />
 
     <TextView
-        android:id="@+id/desc_release"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
