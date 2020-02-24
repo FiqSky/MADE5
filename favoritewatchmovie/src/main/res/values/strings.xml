@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">favoritewatchmovie</string>
+    <string name="app_name">Favorite</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -8,4 +8,9 @@
     <string name="toolbar_title">Favorite</string>
     <string name="title_movie">movie</string>
     <string name="title_series">series</string>
+    <string name="image_movie">Image Movie</string>
+    <string name="description_movie">Overview</string>
+    <string name="relese">Relese date</string>
+    <string name="series">Series</string>
+    <string name="movie">Movie</string>
 </resources>

@@ -17,6 +17,7 @@ import com.bumptech.glide.Glide;
 import com.farzain.watchmovie.Movie;
 import com.farzain.watchmovie.R;
 import com.farzain.watchmovie.db.FavoriteHelper;
+import com.farzain.watchmovie.widget.FavoriteImageBannerWidget;
 
 public class MovieInfoActivity extends AppCompatActivity {
 
@@ -87,16 +88,17 @@ public class MovieInfoActivity extends AppCompatActivity {
 
     private void addToFavorite() {
         long result = helper.insertMovie(this.movie);
-        if (result > a)
+        if (result > a){
+            FavoriteImageBannerWidget.updateWidget(this);
             Toast.makeText(this, getResources().getString(R.string.added), Toast.LENGTH_SHORT).show();
-
-        else
+        } else
             Toast.makeText(this, getResources().getString(R.string.failed_add), Toast.LENGTH_SHORT).show();
     }
 
     private void removeFromFavorite() {
         int result = helper.deleteMovie(movie.getId());
         if (result > a) {
+            FavoriteImageBannerWidget.updateWidget(this);
             Toast.makeText(this, getResources().getString(R.string.removed), Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, getResources().getString(R.string.failed_remove), Toast.LENGTH_SHORT).show();

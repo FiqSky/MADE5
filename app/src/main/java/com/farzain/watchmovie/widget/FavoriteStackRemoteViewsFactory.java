@@ -42,7 +42,8 @@ public class FavoriteStackRemoteViewsFactory implements RemoteViewsService.Remot
                 bitmap = Glide.with(context)
                         .asBitmap()
                         .load(listMovie.get(i).getPhoto())
-                        .into(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL).get();
+                        .submit(512, 512)
+                        .get();
             } catch (Exception e) {
                 e.getMessage();
             }
@@ -55,7 +56,8 @@ public class FavoriteStackRemoteViewsFactory implements RemoteViewsService.Remot
                 bitmap = Glide.with(context)
                         .asBitmap()
                         .load(listSeries.get(i).getPhoto())
-                        .into(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL).get();
+                        .submit(512, 512)
+                        .get();
             } catch (Exception e) {
                 e.getMessage();
             }

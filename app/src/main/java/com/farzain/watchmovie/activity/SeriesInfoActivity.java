@@ -17,6 +17,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.farzain.watchmovie.R;
 import com.farzain.watchmovie.Series;
 import com.farzain.watchmovie.db.FavoriteHelper;
+import com.farzain.watchmovie.widget.FavoriteImageBannerWidget;
 
 public class SeriesInfoActivity extends AppCompatActivity {
 
@@ -87,16 +88,17 @@ public class SeriesInfoActivity extends AppCompatActivity {
     private void addToFavorite() {
         helper.open();
         long result = helper.insertSeries(this.series);
-        if (result > a)
+        if (result > a){
+            FavoriteImageBannerWidget.updateWidget(this);
             Toast.makeText(this, getResources().getString(R.string.added), Toast.LENGTH_SHORT).show();
-
-        else
+        } else
             Toast.makeText(this, getResources().getString(R.string.failed_add), Toast.LENGTH_SHORT).show();
     }
 
     private void removeFromFavorite() {
         int result = helper.deleteSeries(series.getId());
         if (result > a) {
+            FavoriteImageBannerWidget.updateWidget(this);
             Toast.makeText(this, getResources().getString(R.string.removed), Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, getResources().getString(R.string.failed_remove), Toast.LENGTH_SHORT).show();

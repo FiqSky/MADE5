@@ -13,6 +13,7 @@ import com.farzain.watchmovie.Series;
 
 import java.util.ArrayList;
 
+
 import static android.provider.BaseColumns._ID;
 import static androidx.constraintlayout.widget.Constraints.TAG;
 import static com.farzain.watchmovie.db.DatabaseContract.MovieColumns.OVERVIEW;

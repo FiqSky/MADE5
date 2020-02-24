@@ -60,12 +60,12 @@
         "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu_item.xml.flat",
-        "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\layout\\design_navigation_menu_item.xml"
-    },
-    {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi_example_appwidget_preview.png.flat",
         "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\drawable-nodpi\\example_appwidget_preview.png"
+    },
+    {
+        "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu_item.xml.flat",
+        "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -724,12 +724,12 @@
         "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml.flat",
-        "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\interpolator\\btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml"
-    },
-    {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\layout_favorite_image_banner_widget.xml.flat",
         "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\layout\\favorite_image_banner_widget.xml"
+    },
+    {
+        "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml.flat",
+        "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\interpolator\\btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml"
     },
     {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_day.xml.flat",
@@ -2484,12 +2484,12 @@
         "source": "C:\\Users\\AOI\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings.xml.flat",
         "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\AOI\\AndroidStudioProjects\\WatchMovie5\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_text.xml.flat",

@@ -3,6 +3,7 @@ package com.farzain.watchmovie.widget;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -51,8 +52,8 @@ public class FavoriteImageBannerWidget extends AppWidgetProvider {
         super.onReceive(context, intent);
         if (intent.getAction() != null) {
             if (intent.getAction().equals(TOAST_ACTION)) {
-                int viewIndex = intent.getIntExtra(EXTRA_ITEM, 0);
-                Toast.makeText(context, "Touched view" + viewIndex, Toast.LENGTH_SHORT).show();
+                int viewIndex = intent.getIntExtra(EXTRA_ITEM,1);
+                Toast.makeText(context,"Favorite ke : " + viewIndex, Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -65,6 +66,12 @@ public class FavoriteImageBannerWidget extends AppWidgetProvider {
     @Override
     public void onDisabled(Context context) {
         // Enter relevant functionality for when the last widget is disabled
+    }
+
+    public static void updateWidget(Context context) {
+        AppWidgetManager manager = AppWidgetManager.getInstance(context);
+        int[] appWidgetIds = manager.getAppWidgetIds(new ComponentName(context, FavoriteImageBannerWidget.class));
+        manager.notifyAppWidgetViewDataChanged(appWidgetIds, R.id.stack_view);
     }
 }
 
