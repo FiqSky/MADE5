@@ -25,9 +25,13 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <receiver
-            android:name=".reminder.ReleaseReminderReceiver"
+            android:name=".reminder.NotifReminderReceiver"
             android:enabled="true"
             android:exported="true"></receiver>
+        <receiver
+            android:name=".reminder.ReleaseReminderReceiver"
+            android:enabled="true"
+            android:exported="true" />
         <receiver
             android:name=".reminder.DailyReminderReceiver"
             android:enabled="true"
@@ -38,7 +42,7 @@
             android:authorities="com.farzain.watchmovie"
             android:exported="true"
             android:readPermission="com.farzain.watchmovie.READ_DATABASE"
-            android:writePermission="com.farzain.watchmovie.WRITE_DATABASE"/>
+            android:writePermission="com.farzain.watchmovie.WRITE_DATABASE" />
 
         <service
             android:name=".widget.FavoriteStackWidgetService"

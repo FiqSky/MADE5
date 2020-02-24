@@ -1,5 +1,6 @@
 package com.example.favoritewatchmovie.fragment;
 
+import android.annotation.SuppressLint;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -25,7 +26,7 @@ import static androidx.constraintlayout.widget.Constraints.TAG;
 public class FavFragment extends Fragment {
     private View view;
     private FavAdapter adapter;
-    private static final String PROVIDER_NAME = "com.farzain.watchmovie.db.FavoriteProvider";
+    private static final String PROVIDER_NAME = "com.farzain.watchmovie";
     private static final String URL = "content://" + PROVIDER_NAME;
     private static final Uri CONTENT_URI = Uri.parse(URL);
 
@@ -39,6 +40,7 @@ public class FavFragment extends Fragment {
         return view;
     }
 
+    @SuppressLint("WrongConstant")
     private void initView() {
         Log.d(TAG, "initView: Sudah disini ");
         RecyclerView dataMovie = view.findViewById(R.id.rv_movies);
@@ -52,6 +54,7 @@ public class FavFragment extends Fragment {
         loadData();
     }
 
+    @SuppressLint("Recycle")
     private void loadData() {
         Cursor cursor = Objects.requireNonNull(getContext()).getContentResolver().query(CONTENT_URI,
                 null,

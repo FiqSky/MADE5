@@ -32,11 +32,13 @@
     <string name="app_name">WatchMovie</string>
     <string name="appwidget_text">FILM KESUKAAN MU</string>
     <string name="change_language_settings">Ubah Bahasa</string>
+    <string name="check_these">check these out</string>
     <string name="description">Deskripsi</string>
     <string name="empty_text">kosong</string>
     <string name="failed_add">Gagal menambahkan</string>
     <string name="failed_remove">Gagal menghapus</string>
     <string name="favorite">Favorit</string>
+    <string name="has_been_released">has been released</string>
     <string name="hello_movie_fragment">Hai Fragment Film</string>
     <string name="image_poster">Deskripsi Gambar</string>
     <string name="informasi">Informasi</string>
@@ -48,20 +50,22 @@
     <string name="movies_synopsis">Sinopsis Film</string>
     <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Kembali ke atas"</string>
     <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Buka panel navigasi"</string>
+    <string name="new_shows">New Movie</string>
     <string name="reminder_daily">Pengingat Harian</string>
     <string name="reminder_daily_desc">Mengirimkan notifikasi ke pengguna untuk kembali ke Aplikasi Movie Catalogue. Daily reminder harus selalu berjalan tiap jam 7 pagi.</string>
-    <string name="reminder_daily_message">Hey ada yang baru ni yuk lihat</string>
+    <string name="reminder_daily_message">Hei, ada sesuatu yang baru</string>
     <string name="reminder_release">Pengingat Rilis</string>
     <string name="reminder_release_desc">Mengirimkan notifikasi ke pengguna semua film yang rilis hari ini selalu berjalan tiap jam 8 pagi.</string>
     <string name="removed">Berhasil menghapus</string>
     <string name="search">Cari</string>
     <string msgid="730395136688082741" name="search_menu_title">"Telusuri"</string>
-    <string name="search_movie_hint">search_movie</string>
-    <string name="search_series_hint">Cari Acara Tv</string>
+    <string name="search_movie_hint">Cari Film</string>
+    <string name="search_series_hint">Cari AcaraTv</string>
     <string name="series_name">Nama Acara TV</string>
     <string name="setting">Pengaturan</string>
     <string name="sinopsis">Sinopsis</string>
     <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="three_of">tiga dari</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Halaman Utama</string>
     <string name="title_movie">Film</string>

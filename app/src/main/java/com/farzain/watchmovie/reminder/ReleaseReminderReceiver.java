@@ -38,7 +38,7 @@ import static androidx.constraintlayout.widget.Constraints.TAG;
 public class ReleaseReminderReceiver extends BroadcastReceiver {
     private static final String API_KEY = "90f828ee41b521c823dd351d6b67affa";
     public static final String EXTRA_TYPE = "type";
-    public static int RELEASE_ID = 2;
+    public static int RELEASE_ID = 102;
     public ArrayList<Movie> listItemMovie = new ArrayList<>();
 
     public ReleaseReminderReceiver() {
@@ -88,38 +88,43 @@ public class ReleaseReminderReceiver extends BroadcastReceiver {
     }
 
     public void releaseReminderOn(Context context) {
+        releaseReminderOff(context);
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(context, ReleaseReminderReceiver.class);
-        intent.putExtra(EXTRA_TYPE, RELEASE_ID);
+//        Intent intent = new Intent(context, ReleaseReminderReceiver.class);
+//        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, RELEASE_ID, intent, 0);
+//        intent.putExtra(EXTRA_TYPE, RELEASE_ID);
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.HOUR_OF_DAY, 8);
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, RELEASE_ID, intent, 0);
-        if (alarmManager != null) {
-            alarmManager.setInexactRepeating(android.app.AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), android.app.AlarmManager.INTERVAL_DAY, pendingIntent);
-        }
+
+        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, getPendingIntent(context));
+//        if (alarmManager != null) {
+//            alarmManager.setInexactRepeating(android.app.AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), android.app.AlarmManager.INTERVAL_DAY, pendingIntent);
+//        }
     }
 
     public void releaseReminderOff(Context context) {
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(context, ReleaseReminderReceiver.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, RELEASE_ID, intent, 0);
-        pendingIntent.cancel();
+//        Intent intent = new Intent(context, ReleaseReminderReceiver.class);
+//        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, RELEASE_ID, intent, 0);
+//        pendingIntent.cancel();
         if (alarmManager != null) {
-            alarmManager.cancel(pendingIntent);
+            alarmManager.cancel(getPendingIntent(context));
         }
     }
 
-    private PendingIntent getPendingIntent(Context context, int notificationId, Movie item) {
-        Intent intent;
+    private PendingIntent getPendingIntent(Context context) {
+        Intent intent = new Intent(context, ReleaseReminderReceiver.class);
+        return PendingIntent.getBroadcast(context, RELEASE_ID, intent, PendingIntent.FLAG_CANCEL_CURRENT);
+        /*Intent intent;
         if (notificationId == RELEASE_ID) {
             intent = new Intent(context, MovieInfoActivity.class);
             intent.putExtra(MovieInfoActivity.EXTRA_MOVIE, item);
         } else {
             return null;
         }
-        return PendingIntent.getActivity(context, notificationId, intent, 0);
+        return PendingIntent.getActivity(context, notificationId, intent, 0);*/
     }
 
     private void showAlarmNotification(Context context, String title, @Nullable String message, int notifId, @Nullable Movie item) {
@@ -135,19 +140,19 @@ public class ReleaseReminderReceiver extends BroadcastReceiver {
         NotificationCompat.Builder builder;
         if (message == null) {
             builder = new NotificationCompat.Builder(context, CHANNEL_ID)
-                    .setSmallIcon(R.drawable.baseline_alarm_24)
+                    .setSmallIcon(R.drawable.ic_notifications_black_24dp)
                     .setContentTitle(title)
                     .setStyle(inboxStyle)
                     .setColor(ContextCompat.getColor(context, android.R.color.transparent));
         } else {
             builder = new NotificationCompat.Builder(context, CHANNEL_ID)
-                    .setSmallIcon(R.drawable.baseline_alarm_24)
+                    .setSmallIcon(R.drawable.ic_notifications_black_24dp)
                     .setContentTitle(title)
                     .setContentText(message)
                     .setColor(ContextCompat.getColor(context, android.R.color.transparent));
         }
 
-        PendingIntent pendingIntent = getPendingIntent(context, notifId, item);
+        PendingIntent pendingIntent = getPendingIntent(context);
         if (pendingIntent != null) {
             builder.setContentIntent(pendingIntent);
         }

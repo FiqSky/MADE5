@@ -26,8 +26,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private RecyclerView rvFav;
-    private ArrayList<Fav> list = new ArrayList<>();
+//    private RecyclerView rvFav;
+//    private ArrayList<Fav> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

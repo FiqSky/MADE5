@@ -804,6 +804,7 @@
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="check_these">check these out</string>
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="description">Description</string>
@@ -815,7 +816,7 @@
     <string name="failed_add">Failed to Add</string>
     <string name="failed_remove">Failed to remove</string>
     <string name="favorite">Favorite</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="has_been_released">has been released</string>
     <string name="hello_movie_fragment">Hello Movie fragment</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
@@ -863,6 +864,7 @@
     <string description="a11y string to indicate this button switches the user to choosing a year [CHAR_LIMIT=NONE]" name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
     <string name="nav_app_bar_navigate_up_description">Navigate up</string>
     <string name="nav_app_bar_open_drawer_description">Open navigation drawer</string>
+    <string name="new_shows">New Movie</string>
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
@@ -870,18 +872,19 @@
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="reminder_daily">Daily Reminder</string>
     <string name="reminder_daily_desc">mengirimkan notifikasi ke pengguna untuk kembali ke Aplikasi Movie Catalogue. Daily reminder harus selalu berjalan tiap jam 7 pagi.</string>
-    <string name="reminder_daily_message">Hey ada yang baru ni yuk lihat</string>
+    <string name="reminder_daily_message">Hey, there`s something new</string>
     <string name="reminder_release">Release reminder</string>
     <string name="reminder_release_desc">mengirimkan notifikasi ke pengguna semua film yang rilis hari ini selalu berjalan tiap jam 8 pagi.</string>
     <string name="removed">Removed Successfully</string>
     <string name="search">Search</string>
     <string name="search_menu_title">Search</string>
-    <string name="search_movie_hint">search_movie</string>
-    <string name="search_series_hint">Cari Acara Tv</string>
+    <string name="search_movie_hint">Search Movie</string>
+    <string name="search_series_hint">Search Series</string>
     <string name="series_name">Movie Name</string>
     <string name="setting">Settings</string>
     <string name="sinopsis">Sinopsis</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="three_of">tiga dari</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
     <string name="title_movie">Movie</string>

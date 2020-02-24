@@ -1974,6 +1974,7 @@ string change_language_settings
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
+string check_these
 string chip_text
 string clear_text_end_icon_content_description
 string description
@@ -1985,7 +1986,7 @@ string fab_transformation_sheet_behavior
 string failed_add
 string failed_remove
 string favorite
-string hello_blank_fragment
+string has_been_released
 string hello_movie_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
@@ -2033,6 +2034,7 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string new_shows
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -2052,6 +2054,7 @@ string series_name
 string setting
 string sinopsis
 string status_bar_notification_info_overflow
+string three_of
 string title_dashboard
 string title_home
 string title_movie

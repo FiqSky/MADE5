@@ -34,6 +34,10 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <receiver
+            android:name="com.farzain.watchmovie.reminder.NotifReminderReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
             android:name="com.farzain.watchmovie.reminder.ReleaseReminderReceiver"
             android:enabled="true"
             android:exported="true" />

@@ -19,7 +19,7 @@ import com.farzain.watchmovie.R;
 import java.util.Calendar;
 
 public class DailyReminderReceiver extends BroadcastReceiver {
-    private final int DAILY_ID = 1;
+    private final int DAILY_ID = 101;
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -39,12 +39,12 @@ public class DailyReminderReceiver extends BroadcastReceiver {
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, id)
                 .setContentIntent(chPendingIntent)
-                .setSmallIcon(R.drawable.baseline_alarm_24)
-                .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.drawable.baseline_alarm_24))
+                .setSmallIcon(R.drawable.ic_notifications_black_24dp)
+                .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_notifications_black_24dp))
                 .setContentTitle(title)
                 .setContentText(message)
                 .setAutoCancel(true);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel notificationChannel = new NotificationChannel(id, name, NotificationManager.IMPORTANCE_DEFAULT);
             builder.setChannelId(id);
             if (notificationManager != null) {
@@ -57,8 +57,9 @@ public class DailyReminderReceiver extends BroadcastReceiver {
     }
 
     public void dailyReminderOn(Context context) {
+        dailyReminderOff(context);
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(context, DailyReminderReceiver.class);
+//        Intent intent = new Intent(context, DailyReminderReceiver.class);
 //        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, DAILY_ID, intent, 0);
 
         Calendar calendar = Calendar.getInstance();

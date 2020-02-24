@@ -41,7 +41,7 @@
 23-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:17:22-78
 24
 25    <application
-25-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:19:5-69:19
+25-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:19:5-73:19
 26        android:allowBackup="true"
 26-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:20:9-35
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -62,96 +62,104 @@
 35-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:26:9-44
 36        <receiver
 36-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:27:9-30:48
-37            android:name="com.farzain.watchmovie.reminder.ReleaseReminderReceiver"
-37-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:28:13-61
+37            android:name="com.farzain.watchmovie.reminder.NotifReminderReceiver"
+37-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:28:13-59
 38            android:enabled="true"
 38-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:29:13-35
 39            android:exported="true" />
 39-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:30:13-36
 40        <receiver
 40-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:31:9-34:39
-41            android:name="com.farzain.watchmovie.reminder.DailyReminderReceiver"
-41-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:32:13-59
+41            android:name="com.farzain.watchmovie.reminder.ReleaseReminderReceiver"
+41-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:32:13-61
 42            android:enabled="true"
 42-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:33:13-35
 43            android:exported="true" />
 43-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:34:13-36
-44
-45        <provider
-45-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:36:9-41:78
-46            android:name="com.farzain.watchmovie.db.FavoriteProvider"
-46-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:37:13-48
-47            android:authorities="com.farzain.watchmovie"
-47-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:38:13-57
-48            android:exported="true"
-48-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:39:13-36
-49            android:readPermission="com.farzain.watchmovie.READ_DATABASE"
-49-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:40:13-74
-50            android:writePermission="com.farzain.watchmovie.WRITE_DATABASE" />
-50-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:41:13-76
-51
-52        <service
-52-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:43:9-45:72
-53            android:name="com.farzain.watchmovie.widget.FavoriteStackWidgetService"
-53-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:44:13-62
-54            android:permission="android.permission.BIND_REMOTEVIEWS" />
-54-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:45:13-69
+44        <receiver
+44-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:35:9-38:39
+45            android:name="com.farzain.watchmovie.reminder.DailyReminderReceiver"
+45-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:36:13-59
+46            android:enabled="true"
+46-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:37:13-35
+47            android:exported="true" />
+47-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:38:13-36
+48
+49        <provider
+49-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:40:9-45:79
+50            android:name="com.farzain.watchmovie.db.FavoriteProvider"
+50-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:41:13-48
+51            android:authorities="com.farzain.watchmovie"
+51-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:42:13-57
+52            android:exported="true"
+52-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:43:13-36
+53            android:readPermission="com.farzain.watchmovie.READ_DATABASE"
+53-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:44:13-74
+54            android:writePermission="com.farzain.watchmovie.WRITE_DATABASE" />
+54-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:45:13-76
 55
-56        <receiver android:name="com.farzain.watchmovie.widget.FavoriteImageBannerWidget" >
-56-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:47:9-55:20
-56-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:47:19-67
-57            <intent-filter>
-57-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:48:13-50:29
-58                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-58-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:49:17-84
-58-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:49:25-81
-59            </intent-filter>
-60
-61            <meta-data
-61-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:52:13-54:77
-62                android:name="android.appwidget.provider"
-62-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:53:17-58
-63                android:resource="@xml/favorite_image_banner_widget_info" />
-63-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:54:17-74
-64        </receiver>
-65
-66        <activity android:name="com.farzain.watchmovie.activity.ReminderActivity" />
-66-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:57:9-63
-66-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:57:19-60
-67        <activity android:name="com.farzain.watchmovie.activity.SeriesInfoActivity" />
-67-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:58:9-65
-67-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:58:19-62
-68        <activity android:name="com.farzain.watchmovie.activity.MovieInfoActivity" />
-68-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:59:9-64
-68-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:59:19-61
-69        <activity
-69-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:60:9-68:20
-70            android:name="com.farzain.watchmovie.MainActivity"
-70-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:61:13-41
-71            android:label="@string/app_name" >
-71-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:62:13-45
-72            <intent-filter>
-72-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:63:13-67:29
-73                <action android:name="android.intent.action.MAIN" />
-73-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:64:17-69
-73-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:64:25-66
-74
-75                <category android:name="android.intent.category.LAUNCHER" />
-75-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:66:17-77
-75-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:66:27-74
-76            </intent-filter>
-77        </activity>
+56        <service
+56-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:47:9-49:72
+57            android:name="com.farzain.watchmovie.widget.FavoriteStackWidgetService"
+57-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:48:13-62
+58            android:permission="android.permission.BIND_REMOTEVIEWS" />
+58-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:49:13-69
+59
+60        <receiver android:name="com.farzain.watchmovie.widget.FavoriteImageBannerWidget" >
+60-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:51:9-59:20
+60-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:51:19-67
+61            <intent-filter>
+61-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:52:13-54:29
+62                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+62-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:53:17-84
+62-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:53:25-81
+63            </intent-filter>
+64
+65            <meta-data
+65-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:56:13-58:77
+66                android:name="android.appwidget.provider"
+66-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:57:17-58
+67                android:resource="@xml/favorite_image_banner_widget_info" />
+67-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:58:17-74
+68        </receiver>
+69
+70        <activity android:name="com.farzain.watchmovie.activity.ReminderActivity" />
+70-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:61:9-63
+70-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:61:19-60
+71        <activity android:name="com.farzain.watchmovie.activity.SeriesInfoActivity" />
+71-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:62:9-65
+71-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:62:19-62
+72        <activity android:name="com.farzain.watchmovie.activity.MovieInfoActivity" />
+72-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:63:9-64
+72-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:63:19-61
+73        <activity
+73-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:64:9-72:20
+74            android:name="com.farzain.watchmovie.MainActivity"
+74-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:65:13-41
+75            android:label="@string/app_name" >
+75-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:66:13-45
+76            <intent-filter>
+76-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:67:13-71:29
+77                <action android:name="android.intent.action.MAIN" />
+77-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:68:17-69
+77-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:68:25-66
 78
-79        <provider
-79-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-80            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-80-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-81            android:authorities="com.farzain.watchmovie.lifecycle-process"
-81-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-82            android:exported="false"
-82-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-83            android:multiprocess="true" />
-83-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-84    </application>
-85
-86</manifest>
+79                <category android:name="android.intent.category.LAUNCHER" />
+79-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:70:17-77
+79-->C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:70:27-74
+80            </intent-filter>
+81        </activity>
+82
+83        <provider
+83-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+84            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+84-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+85            android:authorities="com.farzain.watchmovie.lifecycle-process"
+85-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+86            android:exported="false"
+86-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+87            android:multiprocess="true" />
+87-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+88    </application>
+89
+90</manifest>
