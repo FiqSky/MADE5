@@ -18,6 +18,7 @@
             android:layout_height="315dp"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
+            android:contentDescription="@string/title_series"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

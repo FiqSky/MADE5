@@ -36,9 +36,9 @@ import static androidx.constraintlayout.widget.Constraints.TAG;
 
 public class ReleaseReminderReceiver extends BroadcastReceiver {
     private static final String API_KEY = "90f828ee41b521c823dd351d6b67affa";
-    public static final String EXTRA_TYPE = "type";
-    public static int RELEASE_ID = 102;
-    public ArrayList<Movie> listItemMovie = new ArrayList<>();
+    private static final String EXTRA_TYPE = "type";
+    private static int RELEASE_ID = 102;
+    private ArrayList<Movie> listItemMovie = new ArrayList<>();
 
     public ReleaseReminderReceiver() {
     }

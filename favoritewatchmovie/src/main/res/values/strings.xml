@@ -2,12 +2,7 @@
     <string name="app_name">Favorite</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="movies_name">name</string>
-    <string name="description">overview</string>
-    <string name="toolbar_title">Favorite</string>
     <string name="title_movie">movie</string>
-    <string name="title_series">series</string>
     <string name="image_movie">Image Movie</string>
     <string name="description_movie">Overview</string>
     <string name="relese">Relese date</string>

@@ -16,6 +16,7 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\AOI\.gradle\cach
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\4fe44ae24daa7cfa2dd483a5d3b65a2f\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\0f33e7c4f3025a2fe0bcba0b7893170a\circleimageview-3.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\87cc0020caff993913d2a7e25a4ed169\glide-4.10.0\AndroidManifest.xml:2:1-12:12
+MERGED from [com.loopj.android:android-async-http:1.4.10] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\89ec7c6892dedd5cfd11dbdb8c7e5148\android-async-http-1.4.10\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\ddf6a25e6e3e5e2af441269b48288beb\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\ec593f8d91037f6ef1bbcd6a177afa1c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\00bc847ce5b9e3ce7b40d465bffbf9e9\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -71,6 +72,8 @@ INJECTED from C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\Androi
 		ADDED from C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.loopj.android:android-async-http:1.4.10] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\89ec7c6892dedd5cfd11dbdb8c7e5148\android-async-http-1.4.10\AndroidManifest.xml:9:5-67
+MERGED from [com.loopj.android:android-async-http:1.4.10] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\89ec7c6892dedd5cfd11dbdb8c7e5148\android-async-http-1.4.10\AndroidManifest.xml:9:5-67
 	android:name
 		ADDED from C:\Users\AOI\AndroidStudioProjects\WatchMovie5\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
@@ -251,6 +254,8 @@ MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\AOI\.gradle\caches\tra
 MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\0f33e7c4f3025a2fe0bcba0b7893170a\circleimageview-3.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\87cc0020caff993913d2a7e25a4ed169\glide-4.10.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\87cc0020caff993913d2a7e25a4ed169\glide-4.10.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.loopj.android:android-async-http:1.4.10] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\89ec7c6892dedd5cfd11dbdb8c7e5148\android-async-http-1.4.10\AndroidManifest.xml:5:5-7:41
+MERGED from [com.loopj.android:android-async-http:1.4.10] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\89ec7c6892dedd5cfd11dbdb8c7e5148\android-async-http-1.4.10\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\ddf6a25e6e3e5e2af441269b48288beb\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\ddf6a25e6e3e5e2af441269b48288beb\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\AOI\.gradle\caches\transforms-2\files-2.1\ec593f8d91037f6ef1bbcd6a177afa1c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44

@@ -19,7 +19,7 @@ import com.farzain.watchmovie.activity.SeriesInfoActivity;
 import java.util.ArrayList;
 
 public class ListSeriesAdapter extends RecyclerView.Adapter<ListSeriesAdapter.ListViewHolder> {
-    private ArrayList<Series> listSeries = new ArrayList<>();
+    private ArrayList<Series> listSeries;
     private Context context;
 
     public ListSeriesAdapter(Context context) {
@@ -61,9 +61,9 @@ public class ListSeriesAdapter extends RecyclerView.Adapter<ListSeriesAdapter.Li
     }
 
     public class ListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        ImageView imgPhoto;
-        TextView tvName;
-        TextView tvDescription;
+        final ImageView imgPhoto;
+        final TextView tvName;
+        final TextView tvDescription;
 
         ListViewHolder(@NonNull View itemView) {
             super(itemView);
